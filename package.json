@@ -1,0 +1,23 @@
+{
+  "name": "suriyakras",
+  "version": "1.0.0",
+  "description": "The Suriyakras theme is a Wordpress theme developed specifically for the Thai Astronomical Society",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theThaiAstro/Suriyakras.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Thammarith",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/theThaiAstro/Suriyakras/issues"
+  },
+  "homepage": "https://github.com/theThaiAstro/Suriyakras#readme"
+}
