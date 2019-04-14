@@ -9,13 +9,16 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
+  width: 100%;
 }
 
 #site-header-nav {
   background: #050311;
   height: 3.2rem;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
