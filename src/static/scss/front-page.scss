@@ -1,0 +1,14 @@
+@import 'colours';
+
+#featured-story {
+  background: {
+    attachment: fixed;
+    color: $tas-colour-black;
+    image: url('../../assets/img/featured-background.jpg');
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  height: 100%;
+  width: 100%;
+}

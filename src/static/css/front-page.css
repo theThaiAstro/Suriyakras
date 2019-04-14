@@ -1,0 +1,11 @@
+#featured-story {
+  background-attachment: fixed;
+  background-color: #050311;
+  background-image: url("../../assets/img/featured-background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=front-page.css.map */
