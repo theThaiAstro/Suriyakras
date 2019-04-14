@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Thai';
+    src: url('./noto-sans-thai/NotoSansThaiUI-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
