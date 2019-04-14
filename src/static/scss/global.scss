@@ -1,0 +1,35 @@
+@import 'colours';
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+#site-header-nav {
+  background: $tas-colour-black;
+  height: 3.2rem;
+  position: fixed;
+  width: 100%;
+}
+
+#site-header-nav-logo {
+  width: 2.4rem;
+
+  &-wrapper {
+    align-items: center;
+    background: $tas-colour-primary;
+    display: flex;
+    height: 4.2rem;
+    justify-content: center;
+    width: 4.2rem;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,41 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+#site-header-nav {
+  background: #050311;
+  height: 3.2rem;
+  position: fixed;
+  width: 100%;
+}
+
+#site-header-nav-logo {
+  width: 2.4rem;
+}
+
+#site-header-nav-logo-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #231683;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.2rem;
+  z-index: 1000;
+}
+/*# sourceMappingURL=global.css.map */
