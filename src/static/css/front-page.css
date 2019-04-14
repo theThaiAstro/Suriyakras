@@ -1,3 +1,11 @@
+.font-1-6 {
+  font-size: 1.6rem;
+}
+
+main {
+  background: #fafafa;
+}
+
 #featured-story {
   background-attachment: fixed;
   background-color: #050311;
@@ -5,7 +13,92 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+#featured-story-darken-overlay {
+  background-color: rgba(5, 3, 17, 0.52);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
+  padding: 1rem;
+  padding-right: 0.32rem;
   width: 100%;
+  z-index: 10;
+}
+
+#featured-story-heading {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 6.4rem;
+}
+
+#featured-story h2 {
+  color: #efeefc;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  z-index: 50;
+}
+
+.category-badge {
+  background: #231683;
+  color: #efeefc;
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 0.32rem;
+  padding: 0.16rem 0.64rem;
+}
+
+.card-container {
+  background: #fff;
+  border: 1px solid #eee;
+  margin-top: 1.6rem;
+}
+
+.card-image {
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card-text {
+  font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
+  padding: 0.8rem 1.2rem;
+}
+
+.card-time {
+  font-size: 0.8rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-title {
+  font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-title::before {
+  background: #231683;
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  margin-right: 0.4rem;
+  width: 1rem;
+}
+
+section:not(#featured-story) {
+  padding: 1.6rem 1rem;
 }
 /*# sourceMappingURL=front-page.css.map */
