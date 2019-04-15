@@ -5,6 +5,32 @@ main {
   color: $tas-colour-black;
 }
 
+a {
+  background: {
+    image: linear-gradient(120deg, $tas-colour-primary 0%, $tas-colour-primary 100%);
+    position: 0 100%;
+    repeat: no-repeat;
+    size: 100% 0;
+  }
+  border-bottom: 2px solid $tas-colour-primary;
+  color: $tas-colour-black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-size 0.128s ease-in, color 0.128s ease-in;
+
+  &:hover {
+    background-size: 100% 100%;
+    border-bottom: 2px solid $tas-colour-primary;
+    color: $space-white;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
 #article {
   &-header,
   &-content {
@@ -20,6 +46,15 @@ main {
   }
 
   &-header {
+    h1 {
+      font: {
+        size: 2.4rem;
+        weight: 700;
+      }
+      line-height: 2.8rem;
+      margin: 0;
+    }
+
     &-image {
       height: 16rem;
       max-height: 48vh;
@@ -37,25 +72,25 @@ main {
       // margin: 1rem 0 0 0;
       font-family: $font-heading;
       padding: 0;
-      
+
       li {
         display: inline-block;
+
         // TODO: Check if this selector is correct (every category except the last one)
         &:not(:last-of-type) {
-          margin-right: 0 0.4rem 0 0;
+          margin-right: 0.4rem;
         }
-  
+        
         a {
-          background: $tas-colour-primary;
-          color: $tas-colour-white;
-          padding: 0.4rem 1rem;
-          text-decoration: none;
-  
+          @extend %badge;
+          color: $fa;
           font: {
-            size: $font-size-content;
-            weight: 600;
+            size: 0.8rem;
+            weight: 500;
           }
-  
+          padding: 0.32rem 0.64rem;
+          text-decoration: none;
+
           &:hover {
             background: $tas-colour-white;
             color: $tas-colour-primary;
@@ -65,7 +100,69 @@ main {
     }
   }
 
+  &-writer {
+    font: {
+      family: $font-heading;
+      size: 1rem;
+      style: normal;
+    }
+    margin-top: 1.28rem;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  &-time {
+    display: block;
+    font: {
+      family: $font-heading;
+      size: 1rem;
+      style: normal;
+      weight: 400;
+    }
+    margin-top: 0.32rem;
+  }
+
   &-content {
+    margin-top: 2.4rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      margin-top: 1.6rem;
+    }
+
+    blockquote {
+      border-left: 0.4rem solid $tas-colour-primary;
+      margin: 1.6rem 0;
+      padding-left: 1.6rem;
+
+      cite {
+        display: block;
+        font: {
+          family: $font-text;
+          size: 1rem;
+        }
+        margin-top: 0.64rem;
+      }
+
+      p {
+        font: {
+          family: $font-heading;
+          size: 1.2rem;
+          weight: 500;
+        }
+        line-height: 1.6rem;
+        margin: 0; // Another inevitable
+      }
+    }
+
     p {
       font: {
         family: $font-text;
@@ -85,5 +182,12 @@ main {
     table {
       padding: $single-padding;
     }
+  }
+}
+
+figure {
+  img {
+    height: auto;
+    width: 100%;
   }
 }
