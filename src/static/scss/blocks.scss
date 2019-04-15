@@ -1,0 +1,82 @@
+@import 'master';
+@import 'colours';
+
+.wp-block-cover {
+  
+}
+
+.wp-block-cover-image {
+  margin: $single-padding;
+  padding: 1rem;
+
+  p {
+    color: white;
+    filter: grayscale(1);
+    mix-blend-mode: luminosity;
+  }
+}
+
+.wp-block-gallery {
+  display: flex;
+}
+
+.wp-block-image {
+  margin: $single-padding;
+
+  // TODO: Desktop ver
+  // &.alignwide {}
+
+  // TODO: Desktop ver
+  // &.alignleft {}
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.alignfull {
+  margin: 1rem 0;
+}
+
+.has-background {
+  margin: $single-padding !important; // Inevitable !important since ID has more superiority
+  padding: 1rem;
+  padding-right: 0.64rem;
+}
+
+.has-drop-cap {
+  &::first-letter {
+    color: $tas-colour-primary;
+    float: left;
+    font-family: $font-drop-cap;
+    font-size: 4.2rem;
+    line-height: 60px;
+    padding-left: 0.2rem;
+    padding-right: 0.8rem;
+    padding-top: 0.4rem;
+  }
+}
+
+.has-parallax {
+  background-attachment: fixed;
+}
+
+.has-right-content {
+  text-align: right;
+}
+
+.has-small-font-size {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.has-large-font-size {
+  font-size: 1.2rem;
+  line-height: 1.52rem;
+}
+
+.has-larger-font-size {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
