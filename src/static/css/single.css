@@ -1,0 +1,76 @@
+main {
+  color: #050311;
+}
+
+#article-header h1,
+#article-header h2,
+#article-header h3,
+#article-header h4,
+#article-header h5,
+#article-header h6, #article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+  font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
+  margin: 0 1.2rem;
+}
+
+#article-header-image {
+  height: 16rem;
+  max-height: 48vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#article-metadata {
+  margin: 1.2rem;
+}
+
+#article-category ul {
+  font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
+  padding: 0;
+}
+
+#article-category ul li {
+  display: inline-block;
+}
+
+#article-category ul li:not(:last-of-type) {
+  margin-right: 0 0.4rem 0 0;
+}
+
+#article-category ul li a {
+  background: #231683;
+  color: #efeefc;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#article-category ul li a:hover {
+  background: #efeefc;
+  color: #231683;
+}
+
+#article-content p {
+  font-family: "arundina", sans-serif;
+  font-size: 1rem;
+  line-height: 1.28rem;
+  margin: 0 0.64rem 0 1.2rem;
+}
+
+#article-content pre {
+  background: #eee;
+  margin: 1.2rem;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+#article-content table {
+  padding: 1.2rem;
+}
+/*# sourceMappingURL=single.css.map */

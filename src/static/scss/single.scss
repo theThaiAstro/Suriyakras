@@ -1,0 +1,89 @@
+@import 'master';
+@import 'colours';
+
+main {
+  color: $tas-colour-black;
+}
+
+#article {
+  &-header,
+  &-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $font-heading;
+      margin: 0 $single-padding;
+    }
+  }
+
+  &-header {
+    &-image {
+      height: 16rem;
+      max-height: 48vh;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &-metadata {
+    margin: $single-padding;
+  }
+
+  &-category {
+    ul {
+      // margin: 1rem 0 0 0;
+      font-family: $font-heading;
+      padding: 0;
+      
+      li {
+        display: inline-block;
+        // TODO: Check if this selector is correct (every category except the last one)
+        &:not(:last-of-type) {
+          margin-right: 0 0.4rem 0 0;
+        }
+  
+        a {
+          background: $tas-colour-primary;
+          color: $tas-colour-white;
+          padding: 0.4rem 1rem;
+          text-decoration: none;
+  
+          font: {
+            size: $font-size-content;
+            weight: 600;
+          }
+  
+          &:hover {
+            background: $tas-colour-white;
+            color: $tas-colour-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    p {
+      font: {
+        family: $font-text;
+        size: $font-size-content;
+      }
+      line-height: 1.28rem;
+      margin: 0 0.64rem 0 $single-padding;
+    }
+
+    pre {
+      background: $space-white;
+      margin: $single-padding;
+      overflow-x: scroll;
+      padding: 1rem;
+    }
+
+    table {
+      padding: $single-padding;
+    }
+  }
+}
