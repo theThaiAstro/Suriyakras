@@ -69,7 +69,7 @@ main {
   z-index: 50;
 }
 
-#events {
+#events, #gallery {
   background-attachment: fixed;
   background-color: #050311;
   background-image: url("../../assets/img/events-background.jpg");
@@ -78,12 +78,17 @@ main {
   background-size: cover;
 }
 
-#events .card-container {
+#events .card-container, #gallery .card-container {
   border: 0;
 }
 
-#events .section-title {
+#events .section-title, #gallery .section-title {
   color: #efeefc;
+}
+
+#gallery {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Heavens_Above_Her.jpg/1024px-Heavens_Above_Her.jpg");
+  background-position: left center;
 }
 
 .category-badge {
@@ -101,6 +106,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 9.6rem;
 }
 
 .card-image-featured {
@@ -115,7 +121,7 @@ main {
       flex-shrink: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 4.2rem;
+  width: 6.4rem;
 }
 
 .card-link {
@@ -126,11 +132,20 @@ main {
 .card-text {
   font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
   padding: 0.8rem 1.2rem;
+  position: relative;
   width: 100%;
 }
 
 .card-time {
   font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.card-time.regular {
+  bottom: 0;
+  margin-bottom: 0.9rem;
+  margin-top: 0;
+  position: absolute;
 }
 
 .card-title {

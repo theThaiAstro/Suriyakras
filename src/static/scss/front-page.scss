@@ -68,6 +68,18 @@ main {
   }
 }
 
+
+#gallery {
+  @extend #events;
+
+  background: {
+    // Credit: Ian Norman
+    // https://commons.wikimedia.org/wiki/File:Heavens_Above_Her.jpg
+    image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Heavens_Above_Her.jpg/1024px-Heavens_Above_Her.jpg');
+    position: left center;
+  }
+}
+
 .category-badge {
   @extend %badge;
   font-size: 0.88rem;
@@ -82,6 +94,7 @@ main {
 
     &.regular {
       display: flex;
+      height: 9.6rem;
     }
   }
 
@@ -95,7 +108,7 @@ main {
     &-regular {
       flex-shrink: 0;
       object-fit: cover;
-      width: 4.2rem;
+      width: 6.4rem;
     }
   }
 
@@ -107,12 +120,21 @@ main {
   &-text {
     font-family: $font-heading;
     padding: 0.8rem 1.2rem;
+    position: relative;
     width: 100%;
   }
 
   &-time {
     font: {
       size: 0.8rem;
+    }
+    margin-top: 0.8rem;
+
+    &.regular {
+      bottom: 0;
+      margin-bottom: 0.9rem;
+      margin-top: 0;
+      position: absolute;
     }
   }
 
