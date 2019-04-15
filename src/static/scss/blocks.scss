@@ -2,7 +2,8 @@
 @import 'colours';
 
 .wp-block-cover {
-  
+  margin: $single-padding;
+  padding: 1rem;
 }
 
 .wp-block-cover-image {
@@ -28,11 +29,10 @@
 
   // TODO: Desktop ver
   // &.alignleft {}
+}
 
-  img {
-    height: auto;
-    width: 100%;
-  }
+.wp-block-pullquote {
+  margin: $single-padding;
 }
 
 .alignfull {
