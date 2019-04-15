@@ -15,7 +15,7 @@ main {
   background-size: cover;
   font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 #featured-story-darken-overlay {
@@ -44,6 +44,23 @@ main {
   z-index: 50;
 }
 
+#events {
+  background-attachment: fixed;
+  background-color: #050311;
+  background-image: url("../../assets/img/events-background.jpg");
+  background-position: 64% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#events .card-container {
+  border: 0;
+}
+
+#events .section-title {
+  color: #efeefc;
+}
+
 .category-badge {
   background: #231683;
   color: #efeefc;
@@ -54,22 +71,47 @@ main {
   padding: 0.16rem 0.64rem;
 }
 
+.category-badge.small {
+  font-size: 0.8rem;
+  padding: 0.08rem 0.64rem;
+}
+
 .card-container {
   background: #fff;
   border: 1px solid #eee;
   margin-top: 1.6rem;
 }
 
-.card-image {
+.card-container.regular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-image-featured {
   height: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
+.card-image-regular {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 4.2rem;
+}
+
+.card-link {
+  color: #050311;
+  text-decoration: none;
+}
+
 .card-text {
   font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
   padding: 0.8rem 1.2rem;
+  width: 100%;
 }
 
 .card-time {
@@ -83,10 +125,12 @@ main {
 }
 
 .section-title {
+  color: #050311;
   font-family: "Noto Sans Thai", "Noto Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
+  margin-top: 1.2rem;
 }
 
 .section-title::before {
