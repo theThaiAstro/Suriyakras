@@ -87,8 +87,8 @@ main {
 }
 
 #gallery {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Heavens_Above_Her.jpg/1024px-Heavens_Above_Her.jpg");
-  background-position: left center;
+  background-image: url("../../assets/img/gallery-background.jpg");
+  background-position: 8% bottom;
 }
 
 .category-badge {
