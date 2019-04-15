@@ -1,13 +1,11 @@
-.wp-block-cover {
-  margin: 1.2rem;
-  padding: 1rem;
-}
-
+.wp-block-cover,
 .wp-block-cover-image {
+  background-size: cover;
   margin: 1.2rem;
-  padding: 1rem;
+  padding: 6.4rem 1rem;
 }
 
+.wp-block-cover p,
 .wp-block-cover-image p {
   color: white;
   -webkit-filter: grayscale(1);
@@ -23,6 +21,20 @@
 
 .wp-block-image {
   margin: 1.2rem;
+}
+
+.wp-block-image figure {
+  margin: 0;
+}
+
+.wp-block-image figcaption {
+  background: #090623;
+  color: #eee;
+  font-family: "arundina", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: -0.4rem;
+  padding: 1rem;
 }
 
 .wp-block-pullquote {

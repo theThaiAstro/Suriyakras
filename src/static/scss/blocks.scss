@@ -1,14 +1,11 @@
 @import 'master';
 @import 'colours';
 
-.wp-block-cover {
-  margin: $single-padding;
-  padding: 1rem;
-}
-
+.wp-block-cover,
 .wp-block-cover-image {
+  background-size: cover;
   margin: $single-padding;
-  padding: 1rem;
+  padding: 6.4rem 1rem;
 
   p {
     color: white;
@@ -23,6 +20,23 @@
 
 .wp-block-image {
   margin: $single-padding;
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    background: $tas-colour-almost-black;
+    color: $space-white;
+    font: {
+      family: $font-text;
+      size: 0.8rem;
+    }
+
+    line-height: 1.2rem;
+    margin-top: -0.4rem;
+    padding: 1rem;
+  }
 
   // TODO: Desktop ver
   // &.alignwide {}
