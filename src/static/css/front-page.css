@@ -71,6 +71,14 @@ main {
   padding: 0.16rem 0.64rem;
 }
 
+.category-badge.bold {
+  font-weight: 600;
+}
+
+.category-badge.red {
+  background: #eb0a19;
+}
+
 .category-badge.small {
   font-size: 0.8rem;
   padding: 0.08rem 0.64rem;
@@ -79,7 +87,7 @@ main {
 .card-container {
   background: #fff;
   border: 1px solid #eee;
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
 }
 
 .card-container.regular {
