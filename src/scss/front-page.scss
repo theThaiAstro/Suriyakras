@@ -10,7 +10,7 @@ main {
   background: {
     attachment: fixed;
     color: $tas-colour-black;
-    image: url('../../assets/img/featured-background.jpg');
+    image: url('../assets/img/featured-background.jpg');
     position: center center;
     repeat: no-repeat;
     size: cover;
@@ -53,7 +53,7 @@ main {
     // image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Astronomy_Africa.jpg');
     // position: 25% center;
     // source: Student Astronomy Group of the University of Crete
-    image: url('../../assets/img/events-background.jpg');
+    image: url('../assets/img/events-background.jpg');
     position: 64% center;
     repeat: no-repeat;
     size: cover;
@@ -75,7 +75,7 @@ main {
   background: {
     // Credit: Ian Norman
     // https://commons.wikimedia.org/wiki/File:Heavens_Above_Her.jpg
-    image: url('../../assets/img/gallery-background.jpg');
+    image: url('../assets/img/gallery-background.jpg');
     position: 8% bottom;
   }
 }

@@ -34,7 +34,7 @@ main {
 #featured-story {
   background-attachment: fixed;
   background-color: #050311;
-  background-image: url("../../assets/img/featured-background.jpg");
+  background-image: url("../assets/img/featured-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ main {
 #events, #gallery {
   background-attachment: fixed;
   background-color: #050311;
-  background-image: url("../../assets/img/events-background.jpg");
+  background-image: url("../assets/img/events-background.jpg");
   background-position: 64% center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,7 +87,7 @@ main {
 }
 
 #gallery {
-  background-image: url("../../assets/img/gallery-background.jpg");
+  background-image: url("../assets/img/gallery-background.jpg");
   background-position: 8% bottom;
 }
 
