@@ -83,6 +83,7 @@ a {
         
         a {
           @extend %badge;
+          border-bottom: none;
           color: $fa;
           font: {
             size: 0.8rem;
@@ -90,9 +91,10 @@ a {
           }
           padding: 0.32rem 0.64rem;
           text-decoration: none;
+          transition: all 0.128s ease-in;
 
           &:hover {
-            background: $tas-colour-white;
+            background: $space-white;
             color: $tas-colour-primary;
           }
         }
@@ -189,5 +191,48 @@ figure {
   img {
     height: auto;
     width: 100%;
+  }
+}
+
+#tags {
+  &-wrapper {
+    // margin-top: 2.4rem;
+    font-family: $font-heading;
+  }
+
+  &-list {
+    // TODO: WHY DO WE NEED MARGIN & PADDING?
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      // Assign right margin to every tags except the last one
+      &:not(:last-of-type) {
+        margin-right: 0.4rem;
+      }
+
+      a {
+        background: #23168312;
+        border-bottom: solud $tas-colour-primary 4px;
+        color: $tas-colour-black;
+        font: {
+          size: 1rem;
+          weight: 600;
+        }
+        padding: 0.4rem 0.64rem;
+        text-decoration: none;
+
+        &::before {
+          content: '#';
+        }
+
+        &:hover {
+          background: $tas-colour-primary;
+          color: $tas-colour-white;
+        }
+      }
+    }
   }
 }

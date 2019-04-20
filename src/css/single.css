@@ -99,15 +99,18 @@ a:active, a:hover {
 }
 
 #article-category ul li a {
+  border-bottom: none;
   color: #fafafa;
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.32rem 0.64rem;
   text-decoration: none;
+  -webkit-transition: all 0.128s ease-in;
+  transition: all 0.128s ease-in;
 }
 
 #article-category ul li a:hover {
-  background: #efeefc;
+  background: #eee;
   color: #231683;
 }
 
@@ -188,5 +191,41 @@ a:active, a:hover {
 figure img {
   height: auto;
   width: 100%;
+}
+
+#tags-wrapper {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+#tags-list {
+  margin: 0;
+  padding: 0;
+}
+
+#tags-list li {
+  display: inline-block;
+}
+
+#tags-list li:not(:last-of-type) {
+  margin-right: 0.4rem;
+}
+
+#tags-list li a {
+  background: #23168312;
+  border-bottom: solud #231683 4px;
+  color: #050311;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 0.64rem;
+  text-decoration: none;
+}
+
+#tags-list li a::before {
+  content: '#';
+}
+
+#tags-list li a:hover {
+  background: #231683;
+  color: #efeefc;
 }
 /*# sourceMappingURL=single.css.map */
