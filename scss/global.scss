@@ -1,0 +1,148 @@
+@import 'colours';
+@import 'master';
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+#site-header-nav {
+  background: $tas-colour-black;
+  height: 3.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &-logo {
+    width: 2.4rem;
+
+    &-wrapper {
+      align-items: center;
+      background: $tas-colour-primary;
+      display: flex;
+      height: 4.2rem;
+      justify-content: center;
+      width: 4.2rem;
+      z-index: 1000;
+    }
+  }
+}
+
+
+#site-footer {
+  background-color: $tas-colour-almost-black;
+  font-family: $font-heading;
+  padding: 4rem 2rem;
+
+  a, a:hover {
+    border: none;
+  }
+
+  &-logo {
+    height: 6.4rem;
+  }
+
+  &-tas-name {
+    margin-top: 0.8rem;
+
+    &-th {
+      color: $tas-colour-white;
+      font: {
+        size: 1.6rem;
+        weight: 600;
+      }
+    }
+
+    &-en {
+      color: $tas-colour-almost-white;
+    }
+  }
+
+  &-socials {
+    margin-top: 1.2rem;
+
+    .icon {
+      fill: $tas-colour-white;
+      height: 1.6rem;
+      margin-right: 1.2rem;
+      width: 1.6rem;
+    }
+  }
+
+  &-sitemap {
+    margin-top: 1.2rem;
+
+    &-main-links {
+      font-weight: 600;
+
+      &,
+      & a {
+        color: $tas-colour-white;
+      }
+    }
+
+    &-other-links {
+      font-weight: 400;
+
+      &,
+      & a {
+        color: $tas-colour-almost-white;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        background: $tas-colour-red;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        display: inline-block;
+
+        &:not(:last-child)::after {
+          color: $tas-colour-red;
+          content: ' / ';
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    color: $tas-colour-white;
+    font-weight: 600;
+    margin-top: 1.2rem;
+
+    &-detail {
+      color: transparentize($tas-colour-white, 0.6);
+      font: {
+        size: smaller;
+        weight: normal;
+      }
+      margin-top: 0.4rem;
+
+      a {
+        color: transparentize($tas-colour-white, 0.6);
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+

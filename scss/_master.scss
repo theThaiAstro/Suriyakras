@@ -1,0 +1,35 @@
+@import 'colours';
+
+$font-drop-cap: 'Georgia', 'arundina', sans-serif;
+$font-heading: 'Noto Sans Thai', 'Noto Sans', Helvetica, Arial, sans-serif;
+$font-text: 'arundina', sans-serif;
+
+$font-size-content: 1rem;
+
+$single-padding: 1.2rem;
+
+
+%badge {
+  background: $tas-colour-primary;
+  color: $tas-colour-white;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.16rem 0.64rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &.bold {
+    font-weight: 600;
+  }
+
+  &.red {
+    background: $tas-colour-red;
+  }
+
+  &.small {
+    font-size: 0.8rem;
+    padding: 0.08rem 0.64rem;
+  }
+}

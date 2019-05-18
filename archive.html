@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/typefaces.css" />
+  <link rel="stylesheet" href="./css/archive.css" />
+  <title>{{ สมาคมดาราศาสตร์ไทย }}</title>
+</head>
+
+<body>
+  <header id="site-header">
+    <nav id="site-header-nav">
+      <a id="site-header-nav-logo-wrapper" href="#" title="สมาคมดาราศาสตร์ไทย">
+        <img id="site-header-nav-logo" src="./assets/img/tas-logo.png"
+          alt="Logo of The Thai Astronomical Society" />
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- For outlining and semantic purpose -->
+    <h1>สารคดี</h1>
+
+    <!-- Recent articles -->
+    <section id="archive-results">
+      <!-- <h2 class="section-title">บทความล่าสุด</h2> -->
+
+      <a class="card-link" href="#">
+        <div class="card-container regular">
+          <img alt="{{image alt}}" class="card-image-regular" src="./assets/img/featured-background.jpg" />
+          <div class="card-text">
+            <div class="category-badge small">{{ category }}</div>
+            <h3 class="card-title">{{ title }}</h3>
+            <div class="card-time regular">{{ the date }}</div>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <img id="site-footer-logo" src="./assets/img/tas-logo.png" alt="สมาคมดาราศาสตร์ไทย" />
+
+    <div id="site-footer-tas-name">
+      <div id="site-footer-tas-name-th">สมาคมดาราศาสตร์ไทย</div>
+      <div id="site-footer-tas-name-en">The Thai Astronomical Society</div>
+    </div>
+
+    <div id="site-footer-sitemap">
+      <!-- MAIN LINKS -->
+      <div id="site-footer-sitemap-main-links">
+        <ul>
+          <li><a href="#">หน้าแรก</a></li>
+          <li><a href="#">ข่าว</a></li>
+          <li><a href="#">ปรากฏการณ์ท้องฟ้า</a></li>
+          <li><a href="#">กิจกรรม</a></li>
+          <li><a href="#">ห้องสมุด</a></li>
+          <li><a href="#">สารพันคำถาม</a></li>
+          <li><a href="#">เกี่ยวกับ</a></li>
+          <li><a href="#">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- /MAIN LINKS -->
+
+      <!-- OTHER LINKS -->
+      <div id="site-footer-sitemap-other-links">
+        <ul>
+          <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+          <li><a href="#">ข้อกำหนดการใช้งาน</a></li>
+          <li><a href="#">ข้อปฏิเสธความรับผิดชอบ</a></li>
+          <li><a href="#">ลิขสิทธิ์</a></li>
+          <li><a href="#">ช่วยเหลือ</a></li>
+          <li><a href="#">สำหรับสื่อ</a></li>
+        </ul>
+      </div>
+      <!-- /OTHER LINKS -->
+    </div>
+
+    <div id="site-footer-copyright">
+      © 2561 สมาคมดาราศาสตร์ไทย
+      <div id="site-footer-copyright-detail">
+        เนื้อหาทั้งหมดเป็นลิขสิทธิ์ของสมาคมดาราศาสตร์ไทย ยกเว้นมีการระบุไว้เป็นอย่างอื่น โปรดดูหน้า<a
+          href="licensing">ลิขสิทธิ์</a>สำหรับการนำไปใช้งาน
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

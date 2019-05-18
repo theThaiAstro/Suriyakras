@@ -1,0 +1,256 @@
+@import 'master';
+@import 'colours';
+
+main {
+  color: $tas-colour-black;
+}
+
+a {
+  background: {
+    image: linear-gradient(120deg, $tas-colour-primary 0%, $tas-colour-primary 100%);
+    position: 0 100%;
+    repeat: no-repeat;
+    size: 100% 0;
+  }
+  border-bottom: 2px solid $tas-colour-primary;
+  color: $tas-colour-black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-size 0.128s, color 0.128s;
+
+  &:hover {
+    background-size: 100% 100%;
+    border-bottom: 2px solid $tas-colour-primary;
+    color: $space-white;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
+#article {
+  &-header,
+  &-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $font-heading;
+      margin: 0 $single-padding;
+    }
+  }
+
+  &-header {
+    h1 {
+      font: {
+        size: 2.4rem;
+        weight: 700;
+      }
+      line-height: 2.8rem;
+      margin: 0;
+    }
+
+    &-image {
+      height: 16rem;
+      max-height: 48vh;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &-metadata {
+    margin: $single-padding;
+  }
+
+  &-category {
+    ul {
+      // margin: 1rem 0 0 0;
+      font-family: $font-heading;
+      padding: 0;
+
+      li {
+        display: inline-block;
+
+        // TODO: Check if this selector is correct (every category except the last one)
+        &:not(:last-of-type) {
+          margin-right: 0.4rem;
+        }
+        
+        a {
+          @extend %badge;
+          border-bottom: none;
+          color: $fa;
+          font: {
+            size: 0.8rem;
+            weight: 500;
+          }
+          padding: 0.32rem 0.64rem;
+          text-decoration: none;
+          transition: all 0.128s ease-in;
+
+          &:hover {
+            background: $space-white;
+            color: $tas-colour-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &-writer {
+    font: {
+      family: $font-heading;
+      size: 1rem;
+      style: normal;
+    }
+    margin-top: 1.28rem;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  &-time {
+    display: block;
+    font: {
+      family: $font-heading;
+      size: 1rem;
+      style: normal;
+      weight: 400;
+    }
+    margin-top: 0.64rem;
+  }
+
+  &-modified-time {
+    display: block;
+    font: {
+      family: $font-heading;
+      size: 0.8rem;
+      style: oblique;
+      weight: 400;
+    }
+    opacity: 0.64;
+  }
+
+  &-content {
+    margin-top: 2.4rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      margin-top: 1.6rem;
+    }
+
+    blockquote {
+      border-left: 0.4rem solid $tas-colour-primary;
+      margin: 1.6rem 0;
+      padding-left: 1.6rem;
+
+      cite {
+        display: block;
+        font: {
+          family: $font-text;
+          size: 1rem;
+        }
+        margin-top: 0.64rem;
+      }
+
+      p {
+        font: {
+          family: $font-heading;
+          size: 1.2rem;
+          weight: 500;
+        }
+        line-height: 1.6rem;
+        margin: 0; // Another inevitable
+      }
+    }
+
+    p {
+      font: {
+        family: $font-text;
+        size: $font-size-content;
+      }
+      line-height: 1.28rem;
+      margin: 0 0.64rem 0 $single-padding;
+    }
+
+    pre {
+      background: $space-white;
+      margin: $single-padding;
+      overflow-x: scroll;
+      padding: 1rem;
+    }
+
+    table {
+      padding: $single-padding;
+    }
+  }
+
+  &-footer {
+    margin: {
+      bottom: 2rem;
+      top: 2.4rem;
+    }
+  }
+}
+
+figure {
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+#tags {
+  &-wrapper {
+    // margin-top: 2.4rem;
+    font-family: $font-heading;
+    margin: 0 0.64rem 0 1.2rem;
+  }
+
+  &-list {
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      // Assign right margin to every tags except the last one
+      &:not(:last-of-type) {
+        margin-right: 0.4rem;
+      }
+
+      a {
+        background: #23168312;
+        border-bottom: solid $tas-colour-primary 4px;
+        color: $tas-colour-black;
+        font: {
+          size: 1rem;
+          weight: 600;
+        }
+        padding: 0.4rem 0.64rem;
+        text-decoration: none;
+        transition: background 0.128s, color 0.128s;
+
+        &::before {
+          content: '#';
+        }
+
+        &:hover {
+          background: $tas-colour-primary;
+          color: $tas-colour-white;
+        }
+      }
+    }
+  }
+}

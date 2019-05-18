@@ -49,6 +49,10 @@ body {
   padding: 4rem 2rem;
 }
 
+#site-footer a, #site-footer a:hover {
+  border: none;
+}
+
 #site-footer-logo {
   height: 6.4rem;
 }

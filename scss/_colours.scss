@@ -1,0 +1,17 @@
+$tas-hsl-h: 247;
+$tas-hsl-s: 71%;
+$tas-hsl-l: 30%;
+
+$tas-colour-primary: hsl($tas-hsl-h, $tas-hsl-s, $tas-hsl-l);
+
+$tas-colour-black: hsl($tas-hsl-h, $tas-hsl-s, 4%);
+$tas-colour-almost-black: hsl($tas-hsl-h, $tas-hsl-s, 8%);
+$tas-colour-almost-white: hsl($tas-hsl-h, $tas-hsl-s, 92%);
+$tas-colour-white: hsl($tas-hsl-h, $tas-hsl-s, 96%);
+
+$tas-colour-red: hsl(356, 92%, 48%);
+
+$white: #fff;
+$fa: #fafafa;
+$space-white: #eee;
+$space-grey: #aaa;

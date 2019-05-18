@@ -1,0 +1,103 @@
+@import 'master';
+@import 'colours';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+}
+
+h1 {
+  font: {
+    size: 2.4rem;
+    weight: 700;
+  }
+  line-height: 2.8rem;
+  margin: 0;
+}
+
+#main-content {
+  margin-top: 4.2rem;
+  padding: 1.2rem;
+}
+
+#archive {
+  &-results {
+    margin-top: 2.4rem;
+  }
+}
+
+.category-badge {
+  @extend %badge;
+  font-size: 0.88rem;
+  margin-bottom: 0.32rem;
+}
+
+.card {
+  &-container {
+    background: $white;
+    border: 1px solid $space-white;
+    margin-top: 1.2rem;
+    transition: box-shadow 0.32s;
+
+    &.regular {
+      display: flex;
+      height: 9.6rem;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 4px 0 $space-white;
+    }
+  }
+
+  &-image {
+    &-featured {
+      height: 12rem;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &-regular {
+      flex-shrink: 0;
+      object-fit: cover;
+      width: 6.4rem;
+    }
+  }
+
+  &-link {
+    color: $tas-colour-black;
+    text-decoration: none;
+  }
+
+  &-text {
+    font-family: $font-heading;
+    padding: 0.8rem 1.2rem;
+    position: relative;
+    width: 100%;
+  }
+
+  &-time {
+    font: {
+      size: 0.8rem;
+    }
+    margin-top: 0.8rem;
+
+    &.regular {
+      bottom: 0;
+      margin-bottom: 0.9rem;
+      margin-top: 0;
+      position: absolute;
+    }
+  }
+
+  &-title {
+    font: {
+      size: 1.2rem;
+      weight: 600;
+    }
+    margin: 0;
+  }
+}
