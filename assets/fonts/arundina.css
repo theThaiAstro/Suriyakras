@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'arundina';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./arundina/arundinasans.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'arundina';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./arundina/arundinasans-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'arundina';
+  font-style: italic;
+  font-weight: bold;
+  src: url('./arundina/arundinasans-boldoblique.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'arundina';
+  font-style: italic;
+  font-weight: normal;
+  src: url('./arundina/arundinasans-oblique.woff2') format('woff2');
+}

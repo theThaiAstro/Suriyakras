@@ -1,0 +1,87 @@
+.wp-block-cover,
+.wp-block-cover-image {
+  background-size: cover;
+  margin: 1.2rem;
+  padding: 6.4rem 1rem;
+}
+
+.wp-block-cover p,
+.wp-block-cover-image p {
+  color: white;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  mix-blend-mode: luminosity;
+}
+
+.wp-block-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wp-block-image {
+  margin: 1.2rem;
+}
+
+.wp-block-image figure {
+  margin: 0;
+}
+
+.wp-block-image figcaption {
+  background: #090623;
+  color: #eee;
+  font-family: "arundina", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: -0.4rem;
+  padding: 1rem;
+}
+
+.wp-block-pullquote {
+  margin: 1.2rem;
+}
+
+.alignfull {
+  margin: 1rem 0;
+}
+
+.has-background {
+  margin: 1.2rem !important;
+  padding: 1rem;
+  padding-right: 0.64rem;
+}
+
+.has-drop-cap::first-letter {
+  color: #231683;
+  float: left;
+  font-family: "Georgia", "arundina", sans-serif;
+  font-size: 4.2rem;
+  line-height: 60px;
+  padding-left: 0.2rem;
+  padding-right: 0.8rem;
+  padding-top: 0.4rem;
+}
+
+.has-parallax {
+  background-attachment: fixed;
+}
+
+.has-right-content {
+  text-align: right;
+}
+
+.has-small-font-size {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.has-large-font-size {
+  font-size: 1.2rem;
+  line-height: 1.52rem;
+}
+
+.has-larger-font-size {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+/*# sourceMappingURL=blocks.css.map */

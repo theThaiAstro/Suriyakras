@@ -1,0 +1,247 @@
+#article-category ul li a {
+  background: #231683;
+  color: #efeefc;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.16rem 0.64rem;
+}
+
+#article-category ul li a a {
+  text-decoration: none;
+}
+
+#article-category ul li a.bold {
+  font-weight: 600;
+}
+
+#article-category ul li a.red {
+  background: #eb0a19;
+}
+
+#article-category ul li a.small {
+  font-size: 0.8rem;
+  padding: 0.08rem 0.64rem;
+}
+
+main {
+  color: #050311;
+}
+
+a {
+  background-image: linear-gradient(120deg, #231683 0%, #231683 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  border-bottom: 2px solid #231683;
+  color: #050311;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: background-size 0.128s, color 0.128s;
+  transition: background-size 0.128s, color 0.128s;
+}
+
+a:hover {
+  background-size: 100% 100%;
+  border-bottom: 2px solid #231683;
+  color: #eee;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: none;
+}
+
+#article-header h1,
+#article-header h2,
+#article-header h3,
+#article-header h4,
+#article-header h5,
+#article-header h6, #article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  margin: 0 1.2rem;
+}
+
+#article-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  margin: 0;
+}
+
+#article-header-image {
+  height: 16rem;
+  max-height: 48vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#article-metadata {
+  margin: 1.2rem;
+}
+
+#article-category ul {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
+#article-category ul li {
+  display: inline-block;
+}
+
+#article-category ul li:not(:last-of-type) {
+  margin-right: 0.4rem;
+}
+
+#article-category ul li a {
+  border-bottom: none;
+  color: #fafafa;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.32rem 0.64rem;
+  text-decoration: none;
+  -webkit-transition: all 0.128s ease-in;
+  transition: all 0.128s ease-in;
+}
+
+#article-category ul li a:hover {
+  background: #eee;
+  color: #231683;
+}
+
+#article-writer {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  margin-top: 1.28rem;
+}
+
+#article-writer a {
+  font-weight: 600;
+}
+
+#article-time {
+  display: block;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0.64rem;
+}
+
+#article-modified-time {
+  display: block;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  font-style: oblique;
+  font-weight: 400;
+  opacity: 0.64;
+}
+
+#article-content {
+  margin-top: 2.4rem;
+}
+
+#article-content h1,
+#article-content h2,
+#article-content h3,
+#article-content h4,
+#article-content h5,
+#article-content h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+#article-content blockquote {
+  border-left: 0.4rem solid #231683;
+  margin: 1.6rem 0;
+  padding-left: 1.6rem;
+}
+
+#article-content blockquote cite {
+  display: block;
+  font-family: "arundina", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.64rem;
+}
+
+#article-content blockquote p {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+#article-content p {
+  font-family: "arundina", sans-serif;
+  font-size: 1rem;
+  line-height: 1.28rem;
+  margin: 0 0.64rem 0 1.2rem;
+}
+
+#article-content pre {
+  background: #eee;
+  margin: 1.2rem;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+#article-content table {
+  padding: 1.2rem;
+}
+
+#article-footer {
+  margin-bottom: 2rem;
+  margin-top: 2.4rem;
+}
+
+figure img {
+  height: auto;
+  width: 100%;
+}
+
+#tags-wrapper {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  margin: 0 0.64rem 0 1.2rem;
+}
+
+#tags-list {
+  padding: 0;
+}
+
+#tags-list li {
+  display: inline-block;
+}
+
+#tags-list li:not(:last-of-type) {
+  margin-right: 0.4rem;
+}
+
+#tags-list li a {
+  background: #23168312;
+  border-bottom: solid #231683 4px;
+  color: #050311;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 0.64rem;
+  text-decoration: none;
+  -webkit-transition: background 0.128s, color 0.128s;
+  transition: background 0.128s, color 0.128s;
+}
+
+#tags-list li a::before {
+  content: '#';
+}
+
+#tags-list li a:hover {
+  background: #231683;
+  color: #efeefc;
+}
+/*# sourceMappingURL=single.css.map */
