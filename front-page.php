@@ -45,45 +45,10 @@
   </section>
 
   <!-- Events -->
-  <section id="events">
-    <h2 class="section-title">กิจกรรม</h2>
+  <?php get_template_part('templates/events'); ?>
+  
 
-    <a class="card-link" href="#">
-      <div class="card-container">
-        <img alt="{{image alt}}" class="card-image-featured" src="./assets/img/featured-background.jpg" />
-        <div class="card-text">
-          <div class="category-badge">หมวดหมู่</div>
-          <h3 class="card-title">นาซาก็พาเธอกลับมาไม่ได้</h3>
-          <div class="card-time">29 กุมภาพันธ์ 2563</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card-link" href="#">
-      <div class="card-container regular">
-        <img alt="{{image alt}}" class="card-image-regular" src="./assets/img/featured-background.jpg" />
-        <div class="card-text">
-          <div class="category-badge small">หมวดหมู่</div>
-          <h3 class="card-title">นาซาก็พาเธอกลับมาไม่ได้</h3>
-          <div class="card-time regular">29 กุมภาพันธ์ 2563</div>
-        </div>
-      </div>
-    </a>
-
-    <a class="card-link" href="#">
-      <div class="card-container regular">
-        <img alt="{{image alt}}" class="card-image-regular" src="./assets/img/featured-background.jpg" />
-        <div class="card-text">
-          <div class="category-badge small red bold">ฟรี</div>
-          <div class="category-badge small">หมวดหมู่</div>
-          <h3 class="card-title">นาซาก็พาเธอกลับมาไม่ได้</h3>
-          <div class="card-time regular">29 กุมภาพันธ์ 2563</div>
-        </div>
-      </div>
-    </a>
-  </section>
-
-  <!-- Recent articles -->
+  <!-- Phenomena -->
   <section id="sky-phenomena">
     <h2 class="section-title">ปรากฏการณ์ท้องฟ้า</h2>
 
