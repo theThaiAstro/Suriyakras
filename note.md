@@ -6,7 +6,7 @@
 
 Should we have excerpt for the featured article? Howabout the rest?
 
-### Thumbnails
+### Thumbnails (single.php)
 
 We might need to check if the post has its thumbnail
 
@@ -18,7 +18,7 @@ We might need to check if the post has its thumbnail
 <?php endif; ?>
 ```
 
-and we should have a default picture if there is none.
+and we should have a default picture if there is none. << THIS
 
 ### Tags
 
