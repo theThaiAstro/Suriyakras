@@ -1,14 +1,26 @@
 <?php
 
-  /* Global variables */
-  $THAI_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
-  $CATEGORY_IDS = array( "featured" => 4, "article" => 5 );
-  /* End of global variables */
-
   /* Global fundtions */
   function CE2BE($CE)
   {
     return ((int)$CE + 543);
+  }
+
+  function get_CATEGORY_IDS() 
+  {
+    $CATEGORY_IDS = array(
+      "featured"    => 4,
+      "articles"    => 5,
+      "events"      => 6,
+      "free-events" => 7,
+    );
+    return $CATEGORY_IDS;
+  }
+
+  function get_THAI_MONTHS()
+  {
+    $THAI_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+    return $THAI_MONTHS;
   }
   /* End of global fundtions */
 
