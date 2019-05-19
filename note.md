@@ -2,6 +2,10 @@
 
 ## TODO
 
+### Mainpage
+
+Should we have excerpt for the featured article? Howabout the rest?
+
 ### Thumbnails
 
 We might need to check if the post has its thumbnail
