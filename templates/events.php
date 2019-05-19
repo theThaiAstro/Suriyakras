@@ -30,9 +30,12 @@
                 else echo get_template_directory_uri() . '/assets/img/featured-background.jpg'
               ?>" />
             <div class="card-text">
-
               <?php foreach(get_the_category() as $category) : ?>
-                <div class="category-badge <?php if ( !$is_first ) echo 'small'; ?>"><?php echo $category->name; ?></div>
+                <div 
+                  class="category-badge
+                    <?php if ( !$is_first ) echo 'small'; ?>
+                    <?php if ( $category->cat_ID === $CATEGORY_IDS['free-events'] ) echo 'red bold'; ?>
+                  "><?php echo $category->name; ?></div>
               <?php endforeach; ?>
 
               <h3 class="card-title"><?php the_title(); ?></h3>
@@ -55,4 +58,3 @@
     endif;
   ?>
 </section>
-<!-- <div class="category-badge small red bold">ฟรี</div> -->
