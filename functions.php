@@ -2,6 +2,7 @@
 
   /* Global variables */
   $THAI_MONTHS = ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"];
+  $CATEGORY_IDS = array( "featured" => 4, "article" => 5 );
   /* End of global variables */
 
   /* Global fundtions */
