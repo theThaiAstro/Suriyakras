@@ -6,7 +6,7 @@
 
     $the_query = new WP_Query([
       'post_type'           => 'post',
-      'category__in'        => array($CATEGORY_IDS['phenomena']), // NEWS too?
+      'category__in'        => array($CATEGORY_IDS['gallery']), // NEWS too?
       'post__not_in'        => get_option( 'sticky_posts' ), // ignores sticky post
       'posts_per_page'      => 4,
       'ignore_sticky_posts' => 1

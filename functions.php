@@ -14,6 +14,8 @@
       "events"      => 6,
       "free-events" => 7,
       "phenomena"   => 8,
+      "phenomena"   => 8,
+      "phenomena"   => 9,
     );
     return $CATEGORY_IDS;
   }
