@@ -27,7 +27,7 @@
               class="card-image-<?php echo $is_first ? 'featured' : 'regular' ?>"
               src="<?php
                 if (has_post_thumbnail()) the_post_thumbnail_url();
-                else echo get_template_directory_uri() . '/assets/img/featured-background.jpg'
+                else echo get_template_directory_uri() . '/assets/img/default-thumbnail.png'
               ?>" />
             <div class="card-text">
 
