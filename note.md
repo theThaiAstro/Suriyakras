@@ -2,6 +2,10 @@
 
 ## TODO
 
+### Events
+
+The events cards on the main page should have the thumbnails as date/month of the event instead of normal thumbnails
+
 ### Mainpage
 
 Should we have excerpt for the featured article? Howabout the rest?
