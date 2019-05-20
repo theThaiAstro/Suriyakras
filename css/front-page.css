@@ -44,7 +44,7 @@ main {
 }
 
 #featured-story-darken-overlay {
-  background-color: rgba(5, 3, 17, 0.52);
+  background-color: rgba(5, 3, 17, 0.58);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,68 +96,30 @@ main {
   margin-bottom: 0.32rem;
 }
 
-.card-container {
-  background: #fff;
-  border: 1px solid #eee;
-  margin-top: 1.2rem;
-  -webkit-transition: all 0.32s;
-  transition: all 0.32s;
+.card-section {
+  padding: 1.6rem 1rem;
 }
 
-.card-container.regular {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 9.6rem;
+@media (min-width: 40em) {
+  .card-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.card-container:hover {
-  border: 1px solid rgba(35, 22, 131, 0.64);
+.section-title-container {
+  background-origin: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.card-image-featured {
-  height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-.card-image-regular {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 6.4rem;
-}
-
-.card-link {
-  color: #050311;
-  text-decoration: none;
-}
-
-.card-text {
-  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
-  padding: 0.8rem 1.2rem;
-  position: relative;
-  width: 100%;
-}
-
-.card-time {
-  font-size: 0.8rem;
-  margin-top: 0.8rem;
-}
-
-.card-time.regular {
-  bottom: 0;
-  margin-bottom: 0.9rem;
-  margin-top: 0;
-  position: absolute;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0;
+@media (min-width: 40em) {
+  .section-title-container {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+    padding: 0 1.2rem;
+  }
 }
 
 .section-title {
@@ -165,8 +127,7 @@ main {
   font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0;
-  margin-top: 1.2rem;
+  margin: 1rem 0;
 }
 
 .section-title::before {
@@ -178,7 +139,109 @@ main {
   width: 1rem;
 }
 
-section:not(#featured-story) {
-  padding: 1.6rem 1rem;
+.card-link {
+  color: #050311;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  .card-link {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+
+@media (min-width: 40em) {
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 63.99em) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 64em) {
+  .card-container {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.card {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 64em) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 16rem;
+  }
+}
+
+.card-image {
+  background-color: #231683;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+@media (min-width: 40em) {
+  .card-image {
+    -ms-flex-preferred-size: 64%;
+        flex-basis: 64%;
+  }
+}
+
+.card-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 3.2rem;
+  margin-top: 0.8rem;
+}
+
+.card-time {
+  bottom: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  position: absolute;
 }
 /*# sourceMappingURL=front-page.css.map */

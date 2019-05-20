@@ -1,6 +1,8 @@
 @import 'master';
 @import 'colours';
 @import 'typography';
+@import 'include-media';
+
 
 main {
   background: $fa;
@@ -20,7 +22,7 @@ main {
   width: 100%;
 
   &-darken-overlay {
-    background-color: transparentize($tas-colour-black, 0.48);
+    background-color: transparentize($tas-colour-black, 0.42);
     display: flex;
     height: 100%;
     padding: 1rem;
@@ -86,70 +88,25 @@ main {
   margin-bottom: 0.32rem;
 }
 
-.card {
-  &-container {
-    background: $white;
-    border: 1px solid $space-white;
-    margin-top: 1.2rem;
-    transition: all 0.32s;
+// ------------------------------------------------------------------------------
 
-    &.regular {
-      display: flex;
-      height: 9.6rem;
-    }
-
-    &:hover {
-      border: 1px solid rgba($tas-colour-primary, 0.64);
-    }
+.card-section {
+  @include media('>=tablet') {
+    display: flex;
   }
 
-  &-image {
-    &-featured {
-      height: 12rem;
-      object-fit: cover;
-      width: 100%;
-    }
+  padding: 1.6rem 1rem;
+}
 
-    &-regular {
-      flex-shrink: 0;
-      object-fit: cover;
-      width: 6.4rem;
-    }
+.section-title-container {
+  @include media('>=tablet') {
+    flex-basis: 42%;
+    padding: 0 1.2rem;
   }
 
-  &-link {
-    color: $tas-colour-black;
-    text-decoration: none;
-  }
-
-  &-text {
-    font-family: $font-heading;
-    padding: 0.8rem 1.2rem;
-    position: relative;
-    width: 100%;
-  }
-
-  &-time {
-    font: {
-      size: 0.8rem;
-    }
-    margin-top: 0.8rem;
-
-    &.regular {
-      bottom: 0;
-      margin-bottom: 0.9rem;
-      margin-top: 0;
-      position: absolute;
-    }
-  }
-
-  &-title {
-    font: {
-      size: 1.2rem;
-      weight: 600;
-    }
-    margin: 0;
-  }
+  background-origin: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-title {
@@ -159,8 +116,7 @@ main {
     size: 1.6rem;
     weight: 600;
   }
-  margin: 0;
-  margin-top: 1.2rem;
+  margin: 1rem 0;
 
   &::before {
     background: $tas-colour-primary;
@@ -172,8 +128,100 @@ main {
   }
 }
 
-section {
-  &:not(#featured-story) {
-    padding: 1.6rem 1rem;
+.card-link {
+  @include media('>=desktop') {
+    flex-basis: 48%;
+
+    &:nth-of-type(2) {
+      // margin: 0;
+    }
+  }
+
+  color: $tas-colour-black;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  width: 100%;
+
+  &:nth-of-type(1) {
+    // margin: 0;
   }
 }
+
+.card-container {
+  @include media('>=tablet') {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  @include media('>=tablet', '<desktop') {
+    flex-direction: column;
+  }
+
+  @include media('>=desktop') {
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.card {
+  @include media('>=desktop') {
+    flex-direction: column;
+    height: 16rem;
+  }
+
+  background: $white;
+  display: flex;
+  font-family: $font-heading;
+}
+
+.card-image {
+  @include media('>=tablet') {
+    flex-basis: 64%;
+  }
+
+  background: {
+    color: $tas-colour-primary;
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  flex-basis: 32%;
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.card-title {
+  font: {
+    size: 1.2rem;
+    weight: 600;
+  }
+  margin: 0;
+  margin-bottom: 3.2rem;
+  margin-top: 0.8rem;
+}
+
+.card-time {
+  bottom: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  position: absolute;
+}
+
+// .card-image {
+//   @include media('>=tablet') {
+//   }
+
+//   @include media('>=tablet', '<desktop') {
+//   }
+
+//   @include media('>=desktop') {
+//   }
+// }
