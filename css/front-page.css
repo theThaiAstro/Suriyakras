@@ -193,6 +193,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  min-height: 12rem;
 }
 
 @media (min-width: 64em) {
@@ -201,20 +202,47 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 16rem;
+    height: 32rem;
+  }
+}
+
+@media (max-width: 39.99em) {
+  .card.featured {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 32rem;
+  }
+}
+
+@media (max-width: 39.99em) {
+  .card.featured .card-image {
+    -ms-flex-preferred-size: 64%;
+        flex-basis: 64%;
   }
 }
 
 .card-image {
   background-color: #231683;
+  background-origin: center center;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 40em) and (max-width: 63.99em) {
+  .card-image {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+
+@media (min-width: 64em) {
   .card-image {
     -ms-flex-preferred-size: 64%;
         flex-basis: 64%;
@@ -233,9 +261,7 @@ main {
 .card-title {
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 3.2rem;
-  margin-top: 0.8rem;
+  margin: 0.8rem 0 3.2rem 0;
 }
 
 .card-time {

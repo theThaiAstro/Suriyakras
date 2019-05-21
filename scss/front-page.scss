@@ -169,26 +169,46 @@ main {
 .card {
   @include media('>=desktop') {
     flex-direction: column;
-    height: 16rem;
+    height: 32rem;
   }
 
   background: $white;
   display: flex;
   font-family: $font-heading;
+  min-height: 12rem;
+
+  &.featured {
+    @include media('<tablet') {
+      flex-direction: column;
+      height: 32rem;
+    }
+
+    & .card-image {
+      @include media('<tablet') {
+        flex-basis: 64%;
+      }
+    }
+  }
 }
 
 .card-image {
-  @include media('>=tablet') {
+  @include media('>=tablet', '<desktop') {
+    flex-basis: 32%;
+  }
+
+  @include media('>=desktop') {
     flex-basis: 64%;
   }
 
   background: {
     color: $tas-colour-primary;
+    origin: center center;
     position: center center;
     repeat: no-repeat;
     size: cover;
   }
   flex-basis: 32%;
+  flex-shrink: 0;
 }
 
 .card-content {
@@ -203,9 +223,7 @@ main {
     size: 1.2rem;
     weight: 600;
   }
-  margin: 0;
-  margin-bottom: 3.2rem;
-  margin-top: 0.8rem;
+  margin: 0.8rem 0 3.2rem 0;
 }
 
 .card-time {
@@ -214,14 +232,3 @@ main {
   margin-bottom: 1.2rem;
   position: absolute;
 }
-
-// .card-image {
-//   @include media('>=tablet') {
-//   }
-
-//   @include media('>=tablet', '<desktop') {
-//   }
-
-//   @include media('>=desktop') {
-//   }
-// }
