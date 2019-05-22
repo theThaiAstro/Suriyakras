@@ -5,6 +5,8 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 ## TODOS
 
 - [ ] Add hovering effect (shadow?, radius) to the card
+- [ ] Make the `single.php` reponsive
+- [ ] Create pages (slugs) for artices, news, phenomena, gallery
 
 ## Finished
 
