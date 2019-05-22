@@ -1,10 +1,10 @@
 <section id="gallery" class="card-section">
 
   <div class="section-title-container">
-    <h2 class="section-title">ห้องภาพท้องฟ้า</h2>
+    <h2 class="section-title white">ห้องภาพท้องฟ้า</h2>
   </div>
 
-  <div class="cards-container">
+  <div class="card-container">
     <?php
       $CATEGORY_IDS = get_CATEGORY_IDS();
 
@@ -50,6 +50,7 @@
         <?php
           $order++;
         endwhile;
+        if ($order % 2 === 1) echo '<div class="card-link"></div>';
         wp_reset_postdata();
       else:
     ?>

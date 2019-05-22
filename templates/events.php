@@ -1,7 +1,7 @@
 <section id="events" class="card-section">
 
   <div class="section-title-container">
-    <h2 class="section-title">กิจกรรม</h2>
+    <h2 class="section-title white">กิจกรรม</h2>
   </div>
 
   <div class="card-container">
@@ -54,6 +54,7 @@
         <?php
           $order++;
         endwhile;
+        if ($order % 2 === 1) echo '<div class="card-link"></div>';
         wp_reset_postdata();
       else:
     ?>

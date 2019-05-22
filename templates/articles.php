@@ -1,4 +1,4 @@
-<section id="recent-articles" class="card-section">
+<section id="articles" class="card-section">
 
   <div class="section-title-container">
     <h2 class="section-title">บทความล่าสุด</h2>
@@ -50,6 +50,7 @@
         <?php
           $order++;
         endwhile;
+        if ($order % 2 === 1) echo '<div class="card-link"></div>';
         wp_reset_postdata();
       endif;
     ?>
