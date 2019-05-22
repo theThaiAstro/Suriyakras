@@ -65,10 +65,18 @@ main {
     border: 0;
   }
 
-  .section-title {
-    color: $tas-colour-white;
+  // Credit: Alexander Jamieson
+  // https://commons.wikimedia.org/wiki/File:Alexander_Jamieson_Celestial_Atlas-Contents.jpg
+  $articles-image-url: '../assets/img/articles-background.jpg';
+
+  &#articles {
+    @include media('>=tablet') {
+      .section-title-container {
+        background-image: url($articles-image-url);
+        background-position: 52% bottom;
+      }
+    }
   }
-}
 
 
 #gallery {
@@ -88,14 +96,32 @@ main {
   margin-bottom: 0.32rem;
 }
 
-// ------------------------------------------------------------------------------
-
-.card-section {
-  @include media('>=tablet') {
-    display: flex;
+  &#phenomena {
+    @include media('>=tablet') {
+      .section-title-container {
+        background-image: url($phenomena-image-url);
+        background-position: 97% bottom;
+      }
+    }
   }
 
-  padding: 1.6rem 1rem;
+  // Credit: Ian Norman
+  // https://commons.wikimedia.org/wiki/File:Heavens_Above_Her.jpg
+  $gallery-image-url: '../assets/img/gallery-background.jpg';
+
+  &#gallery {
+    @include media('<tablet') {
+      background-image: url($gallery-image-url);
+      background-position: 8% bottom;
+    }
+
+    @include media('>=tablet') {
+      .section-title-container {
+        background-image: url($gallery-image-url);
+        background-position: 42% bottom;
+      }
+    }
+  }
 }
 
 .section-title-container {
