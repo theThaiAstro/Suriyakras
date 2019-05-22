@@ -8,7 +8,8 @@ The events cards on the main page should have the thumbnails as date/month of th
 
 ### Mainpage
 
-Should we have excerpt for the featured article? Howabout the rest?
+- Should we have excerpt for the featured article? Howabout the rest?
+- Should we shorten the word from *ปรากฏการณ์ท้องฟ้า* to *ปรากฏการณ์*?
 
 ### Thumbnails (single.php)
 
@@ -27,10 +28,6 @@ and we should have a default picture if there is none. << THIS
 ### Tags
 
 Style the tags
-
-### Edit links
-
-Style the edit link
 
 ### Time
 
