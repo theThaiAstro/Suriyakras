@@ -47,23 +47,40 @@ main {
   }
 }
 
-#events {
+.category-badge {
+  @extend %badge;
+  font-size: 0.88rem;
+  margin-bottom: 0.32rem;
+}
+
+// ------------------------------------------------------------------------------
+
+.card-section {
+  @include media('>=tablet') {
+    display: flex;
+  }
+
+  @include media('>=desktop') {
+    padding: 2rem 8rem;
+
+    &:first-of-type {
+      padding-top: 4rem;
+    }
+
+    &:last-of-type {
+      padding-bottom: 4rem;
+    }
+  }
+
   background: {
     attachment: fixed;
-    color: $tas-colour-black;
-    // source: Kiyeng
-    // image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Astronomy_Africa.jpg');
-    // position: 25% center;
-    // source: Student Astronomy Group of the University of Crete
-    image: url('../assets/img/events-background.jpg');
-    position: 64% center;
+    color: $space-white;
     repeat: no-repeat;
     size: cover;
   }
+  padding: 1.6rem 1rem;
 
-  .card-container {
-    border: 0;
-  }
+  // CONFIGURATIONS OF EACH SECTION
 
   // Credit: Alexander Jamieson
   // https://commons.wikimedia.org/wiki/File:Alexander_Jamieson_Celestial_Atlas-Contents.jpg
@@ -78,23 +95,29 @@ main {
     }
   }
 
+  // source: Kiyeng
+  // image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Astronomy_Africa.jpg');
+  // position: 25% center;
+  // source: Student Astronomy Group of the University of Crete
+  $events-image-url: '../assets/img/events-background.jpg';
 
-#gallery {
-  @extend #events;
+  &#events {
+    @include media('<tablet') {
+      background-image: url($events-image-url);
+      background-position: 64% center;
+    }
 
-  background: {
-    // Credit: Ian Norman
-    // https://commons.wikimedia.org/wiki/File:Heavens_Above_Her.jpg
-    image: url('../assets/img/gallery-background.jpg');
-    position: 8% bottom;
+    @include media('>=tablet') {
+      .section-title-container {
+        background-image: url($events-image-url);
+        background-position: 64% center;
+      }
+    }
   }
-}
 
-.category-badge {
-  @extend %badge;
-  font-size: 0.88rem;
-  margin-bottom: 0.32rem;
-}
+  // Credit: Philipp Salzgeber
+  // https://commons.wikimedia.org/wiki/File:Comet-Hale-Bopp-29-03-1997_hires_adj.jpg
+  $phenomena-image-url: '../assets/img/phenomena-background.jpg';
 
   &#phenomena {
     @include media('>=tablet') {
@@ -126,8 +149,16 @@ main {
 
 .section-title-container {
   @include media('>=tablet') {
-    flex-basis: 42%;
-    padding: 0 1.2rem;
+    flex-basis: 32%;
+    flex-shrink: 0;
+    margin-top: 1rem;
+    min-width: 32%;
+    padding: 2.4rem 3.2rem;
+  }
+
+  @include media('>=desktop') {
+    min-width: 42%;
+    padding: 4.2rem 4.2rem;
   }
 
   background-origin: center center;
@@ -143,6 +174,10 @@ main {
     weight: 600;
   }
   margin: 1rem 0;
+
+  &.white {
+    color: $tas-colour-white;
+  }
 
   &::before {
     background: $tas-colour-primary;
@@ -223,7 +258,7 @@ main {
   }
 
   @include media('>=desktop') {
-    flex-basis: 64%;
+    flex-basis: 60%;
   }
 
   background: {

@@ -69,34 +69,16 @@ main {
   z-index: 50;
 }
 
-#events, #gallery {
-  background-attachment: fixed;
-  background-color: #050311;
-  background-image: url("../assets/img/events-background.jpg");
-  background-position: 64% center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#events .card-container, #gallery .card-container {
-  border: 0;
-}
-
-#events .section-title, #gallery .section-title {
-  color: #efeefc;
-}
-
-#gallery {
-  background-image: url("../assets/img/gallery-background.jpg");
-  background-position: 8% bottom;
-}
-
 .category-badge {
   font-size: 0.88rem;
   margin-bottom: 0.32rem;
 }
 
 .card-section {
+  background-attachment: fixed;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1.6rem 1rem;
 }
 
@@ -108,6 +90,60 @@ main {
   }
 }
 
+@media (min-width: 64em) {
+  .card-section {
+    padding: 2rem 8rem;
+  }
+  .card-section:first-of-type {
+    padding-top: 4rem;
+  }
+  .card-section:last-of-type {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .card-section#articles .section-title-container {
+    background-image: url("../assets/img/articles-background.jpg");
+    background-position: 52% bottom;
+  }
+}
+
+@media (max-width: 39.99em) {
+  .card-section#events {
+    background-image: url("../assets/img/events-background.jpg");
+    background-position: 64% center;
+  }
+}
+
+@media (min-width: 40em) {
+  .card-section#events .section-title-container {
+    background-image: url("../assets/img/events-background.jpg");
+    background-position: 64% center;
+  }
+}
+
+@media (min-width: 40em) {
+  .card-section#phenomena .section-title-container {
+    background-image: url("../assets/img/phenomena-background.jpg");
+    background-position: 97% bottom;
+  }
+}
+
+@media (max-width: 39.99em) {
+  .card-section#gallery {
+    background-image: url("../assets/img/gallery-background.jpg");
+    background-position: 8% bottom;
+  }
+}
+
+@media (min-width: 40em) {
+  .card-section#gallery .section-title-container {
+    background-image: url("../assets/img/gallery-background.jpg");
+    background-position: 42% bottom;
+  }
+}
+
 .section-title-container {
   background-origin: center center;
   background-repeat: no-repeat;
@@ -116,9 +152,20 @@ main {
 
 @media (min-width: 40em) {
   .section-title-container {
-    -ms-flex-preferred-size: 42%;
-        flex-basis: 42%;
-    padding: 0 1.2rem;
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-top: 1rem;
+    min-width: 32%;
+    padding: 2.4rem 3.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .section-title-container {
+    min-width: 42%;
+    padding: 4.2rem 4.2rem;
   }
 }
 
@@ -128,6 +175,10 @@ main {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 1rem 0;
+}
+
+.section-title.white {
+  color: #efeefc;
 }
 
 .section-title::before {
@@ -244,8 +295,8 @@ main {
 
 @media (min-width: 64em) {
   .card-image {
-    -ms-flex-preferred-size: 64%;
-        flex-basis: 64%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
 }
 
