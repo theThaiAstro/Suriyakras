@@ -192,20 +192,17 @@ main {
 .card-link {
   @include media('>=desktop') {
     flex-basis: 48%;
-
-    &:nth-of-type(2) {
-      // margin: 0;
-    }
   }
 
   color: $tas-colour-black;
   display: block;
   margin-top: 1rem;
   text-decoration: none;
+  transition: box-shadow 0.4s;
   width: 100%;
 
-  &:nth-of-type(1) {
-    // margin: 0;
+  &:hover:not(:empty) {
+    box-shadow: 0 4px 8px 0 hsla(8, 8, 8, 0.16);
   }
 }
 

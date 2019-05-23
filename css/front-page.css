@@ -195,6 +195,10 @@ main {
   display: block;
   margin-top: 1rem;
   text-decoration: none;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
   width: 100%;
 }
 
@@ -203,6 +207,11 @@ main {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
+}
+
+.card-link:hover:not(:empty) {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(22, 19, 19, 0.16);
+          box-shadow: 0 4px 8px 0 rgba(22, 19, 19, 0.16);
 }
 
 @media (min-width: 40em) {
