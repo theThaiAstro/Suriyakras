@@ -9,6 +9,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 
 ## Finished
 
+- [x] Make `footer.php` responsive *(25 May)*
 - [x] Add hovering effect to the card *(23 May)*
 - [x] Set background image for each section title container (section background image should only appear on small) *(23 May)*
 - [x] Finished making the cards and the sections with cards responsive *(21 May)*
