@@ -50,7 +50,14 @@ body {
   padding: 4rem 2rem;
 }
 
-#site-footer a, #site-footer a:hover {
+@media (min-width: 64em) {
+  #site-footer {
+    padding: 4.2rem 8rem;
+  }
+}
+
+#site-footer a,
+#site-footer a:hover {
   border: none;
 }
 

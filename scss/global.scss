@@ -1,5 +1,6 @@
 @import 'colours';
 @import 'master';
+@import 'include-media';
 
 :root {
   font-size: 16px;
@@ -42,11 +43,16 @@ body {
 
 
 #site-footer {
+  @include media('>=desktop') {
+    padding: 4.2rem 8rem;
+  }
+
   background-color: $tas-colour-almost-black;
   font-family: $font-heading;
   padding: 4rem 2rem;
 
-  a, a:hover {
+  a,
+  a:hover {
     border: none;
   }
 
