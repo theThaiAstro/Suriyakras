@@ -26,7 +26,6 @@
 
     <?php
       endwhile;
-      if ($order % 2 === 1) echo '<div class="card-link"></div>';
       wp_reset_postdata();
     endif;
   endif;
