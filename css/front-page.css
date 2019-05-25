@@ -23,6 +23,18 @@
   padding: 0.08rem 0.64rem;
 }
 
+.card-image {
+  background-color: #231683;
+  background-origin: center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .font-1-6 {
   font-size: 1.6rem;
 }
@@ -308,18 +320,6 @@ main {
     -ms-flex-preferred-size: 64%;
         flex-basis: 64%;
   }
-}
-
-.card-image {
-  background-color: #231683;
-  background-origin: center center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 @media (min-width: 42em) and (max-width: 63.99em) {
