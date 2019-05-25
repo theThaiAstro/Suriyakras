@@ -5,6 +5,8 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 ## TODOS
 
 - [ ] Make the `single.php` reponsive
+- [ ] Make footer reponsive
+- [ ] Check the responsiveness of the header
 - [ ] Create pages (slugs) for artices, news, phenomena, gallery
 
 ## Finished
