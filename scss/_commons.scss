@@ -1,0 +1,122 @@
+@import 'master';
+@import 'colours';
+@import 'include-media';
+
+%badge {
+  background: $tas-colour-primary;
+  color: $tas-colour-white;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.16rem 0.64rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &.bold {
+    font-weight: 600;
+  }
+
+  &.red {
+    background: $tas-colour-red;
+  }
+
+  &.small {
+    font-size: 0.8rem;
+    padding: 0.08rem 0.64rem;
+  }
+}
+
+%card-link {
+  @include media('>=desktop') {
+    flex-basis: 48%;
+  }
+
+  color: $tas-colour-black;
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: box-shadow 0.4s;
+  width: 100%;
+
+  &:hover:not(:empty) {
+    box-shadow: 0 4px 8px 0 hsla(8, 8, 8, 0.16);
+  }
+}
+
+%card-container {
+  @include media('>=tablet') {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  @include media('>=tablet', '<desktop') {
+    flex-direction: column;
+  }
+
+  @include media('>=desktop') {
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+%card {
+  @include media('>=desktop') {
+    flex-direction: column;
+    height: 32rem;
+  }
+
+  background: $white;
+  display: flex;
+  font-family: $font-heading;
+  min-height: 12rem;
+
+  &.featured {
+    @include media('<tablet') {
+      flex-direction: column;
+      height: 32rem;
+    }
+
+    & .card-image {
+      @include media('<tablet') {
+        flex-basis: 64%;
+      }
+    }
+  }
+}
+
+%card-image {
+  background: {
+    color: $tas-colour-primary;
+    origin: center center;
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  flex-basis: 32%;
+  flex-shrink: 0;
+}
+
+%card-content {
+  flex-grow: 1;
+  padding: 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+%card-title {
+  font: {
+    size: 1.2rem;
+    weight: 600;
+  }
+  margin: 0.8rem 0 3.2rem;
+}
+
+%card-time {
+  bottom: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  position: absolute;
+}
