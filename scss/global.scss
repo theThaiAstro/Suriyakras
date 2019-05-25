@@ -43,6 +43,10 @@ body {
 
 
 #site-footer {
+  @include media('>=tablet', '<desktop') {
+    padding: 4.2rem 12vw;
+  }
+
   @include media('>=desktop') {
     padding: 4.2rem 16rem;
   }
