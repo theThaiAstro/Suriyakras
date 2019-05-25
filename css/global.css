@@ -52,7 +52,7 @@ body {
 
 @media (min-width: 64em) {
   #site-footer {
-    padding: 4.2rem 8rem;
+    padding: 4.2rem 16rem;
   }
 }
 

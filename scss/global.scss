@@ -44,7 +44,7 @@ body {
 
 #site-footer {
   @include media('>=desktop') {
-    padding: 4.2rem 8rem;
+    padding: 4.2rem 16rem;
   }
 
   background-color: $tas-colour-almost-black;
