@@ -1,4 +1,5 @@
 .vscode/
+*.html
 
 *.log
 wp-config.php
