@@ -4,7 +4,12 @@
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header id="article-header">
-          <img alt="" id="article-header-image" src="<?php the_post_thumbnail_url(); ?>" />
+ 
+        <?php if ( has_post_thumbnail() ) : ?>
+            <img alt="" id="article-header-image" src="<?php the_post_thumbnail_url(); ?>" />
+          <?php else : ?>
+            <div style="margin-top: 8rem;"></div>
+          <?php endif; ?>
 
           <section id="article-metadata">
 
@@ -20,13 +25,13 @@
             </address>
 
             <time id="article-time">
-              เผยแพร่เมื่อ <?php the_time('j'); ?> <?php echo get_THAI_MONTHS()[get_the_time('n')]; ?> <?php echo CE2BE(get_the_time('Y')); ?> · <?php the_time('H:i'); ?>
+              เผยแพร่เมื่อ <?php the_time('j'); ?> <?php echo get_THAI_MONTHS()[get_the_time('n') - 1]; ?> <?php echo CE2BE(get_the_time('Y')); ?> · <?php the_time('H:i'); ?>
             </time>
 
             <!-- TODO: Style -->
             <?php if ( get_the_modified_time( 'U' ) > get_the_time( 'U' ) ) : ?>
               <time id="article-modified-time">
-                (แก้ไขเมื่อ <?php the_modified_time('j') ?> <?php echo get_THAI_MONTHS()[get_the_modified_time('n')]; ?> <?php echo CE2BE(get_the_modified_time('Y')); ?> · <?php the_modified_time('H:i'); ?>)
+                (แก้ไขเมื่อ <?php the_modified_time('j') ?> <?php echo get_THAI_MONTHS()[get_the_modified_time('n') - 1]; ?> <?php echo CE2BE(get_the_modified_time('Y')); ?> · <?php the_modified_time('H:i'); ?>)
               </time>
             <?php endif; ?>
             
