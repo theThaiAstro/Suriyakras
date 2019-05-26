@@ -33,6 +33,10 @@
       // Add Menu Support
       add_theme_support('menus');
 
+      register_nav_menu('main_navigation', 'Top navigation bar');
+      register_nav_menu('footer_primary', 'Primary footer menu');
+      register_nav_menu('footer_secondary', 'Secondary footer menu');
+
       // Add Thumbnail Theme Support
       add_theme_support('post-thumbnails');
       // add_image_size('large', 700, '', true); // Large Thumbnail
@@ -46,30 +50,6 @@
       // Localisation Support
       // load_theme_textdomain('suriyakras', get_template_directory() . '/languages');
   }
-
-  // function suriyakras_nav()
-  // {
-  //   wp_nav_menu(
-  //     array(
-  //       'theme_location'  => 'header-menu',
-  //       'menu'            => '',
-  //       'container'       => 'div',
-  //       'container_class' => 'menu-{menu slug}-container',
-  //       'container_id'    => '',
-  //       'menu_class'      => 'menu',
-  //       'menu_id'         => '',
-  //       'echo'            => true,
-  //       'fallback_cb'     => 'wp_page_menu',
-  //       'before'          => '',
-  //       'after'           => '',
-  //       'link_before'     => '',
-  //       'link_after'      => '',
-  //       'items_wrap'      => '<ul>%3$s</ul>',
-  //       'depth'           => 0,
-  //       'walker'          => ''
-  //     )
-  //   );
-  // }
 
   // Load HTML5 Blank scripts (header.php)
   // function suriyakras_header_scripts()

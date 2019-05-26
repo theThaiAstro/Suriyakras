@@ -23,9 +23,10 @@
     </div> -->
 
     <div id="site-footer-sitemap">
-      <!-- MAIN LINKS -->
+      <!-- Primary footer menu (main links) -->
       <div id="site-footer-sitemap-main-links">
-        <ul>
+        <?php wp_nav_menu( array('theme_location' => 'footer_primary') ); ?>
+        <!-- <ul>
           <li><a href="#">หน้าแรก</a></li>
           <li><a href="#">ข่าว</a></li>
           <li><a href="#">ปรากฏการณ์ท้องฟ้า</a></li>
@@ -34,20 +35,21 @@
           <li><a href="#">สารพันคำถาม</a></li>
           <li><a href="#">เกี่ยวกับ</a></li>
           <li><a href="#">ติดต่อ</a></li>
-        </ul>
+        </ul> -->
       </div>
       <!-- /MAIN LINKS -->
 
       <!-- OTHER LINKS -->
       <div id="site-footer-sitemap-other-links">
-        <ul>
+        <?php wp_nav_menu( array('theme_location' => 'footer_secondary') ); ?>
+        <!-- <ul>
           <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
           <li><a href="#">ข้อกำหนดการใช้งาน</a></li>
           <li><a href="#">ข้อปฏิเสธความรับผิดชอบ</a></li>
           <li><a href="#">ลิขสิทธิ์</a></li>
           <li><a href="#">ช่วยเหลือ</a></li>
           <li><a href="#">สำหรับสื่อ</a></li>
-        </ul>
+        </ul> -->
       </div>
       <!-- /OTHER LINKS -->
     </div>

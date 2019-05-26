@@ -6,14 +6,18 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 
 ### 🔥 P1
 
-- [ ] Implement custom menus for
+- [-] Implement custom menus for
   - [ ] nav bar
-  - [ ] footer
+  - [x] footer
+- [ ] Share buttons (phase II)
+  - [ ] In articles
+  - [ ] In footer
 
 ### P2
 
 - [ ] Create pages (slugs) for artices, news, phenomena, gallery
 - [ ] The events cards on the main page should have the thumbnails as date/month of the event instead of normal thumbnails
+- [ ] Back to top icon and link at footer
 
 ### P3
 
