@@ -11,8 +11,8 @@
 </head>
 <body>
   <header id="site-header">
-    <nav id="site-header-nav">
-      <a id="site-header-nav-logo-wrapper" href="#" title="สมาคมดาราศาสตร์ไทย">
+    <nav id="site-header-nav" <?php if (is_admin_bar_showing()) echo 'style="margin-top: 32px;"'; ?>>
+      <a id="site-header-nav-logo-wrapper" href="<?php echo get_site_url(); ?>" title="สมาคมดาราศาสตร์ไทย">
         <img id="site-header-nav-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tas-logo.png"
           alt="Logo of The Thai Astronomical Society" />
       </a>
