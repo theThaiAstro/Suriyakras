@@ -28,7 +28,7 @@
 
             <h3 class="card-title"><?php the_title(); ?></h3>
             <div class="card-time <?php if ( !$is_first ) echo 'regular'; ?>">
-              <?php the_time('j'); ?> <?php echo get_THAI_MONTHS()[get_the_time('n')]; ?> <?php echo CE2BE(get_the_time('Y')); ?> · <?php the_time('H:i'); ?>
+              <?php the_time('j'); ?> <?php echo get_THAI_MONTHS()[get_the_time('n') - 1]; ?> <?php echo CE2BE(get_the_time('Y')); ?> · <?php the_time('H:i'); ?>
             </div>
           </div>
         </div>
