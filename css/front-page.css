@@ -357,4 +357,30 @@ main {
   margin-bottom: 1.2rem;
   position: absolute;
 }
+
+.no-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #818181;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 41.99em) {
+  .no-content {
+    background: white;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+}
 /*# sourceMappingURL=front-page.css.map */

@@ -301,3 +301,23 @@ main {
   margin-bottom: 1.2rem;
   position: absolute;
 }
+
+.no-content {
+  @include media('<tablet') {
+    background: lighten($space-grey, 64);
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  align-items: center;
+  color: darken($space-grey, 16);
+  display: flex;
+  font: {
+    family: $font-heading;
+    size: 1.6rem;
+    weight: 500;
+  }
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}

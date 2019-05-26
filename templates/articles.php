@@ -52,6 +52,10 @@
         endwhile;
         if ($order % 2 === 1) echo '<div class="card-link"></div>';
         wp_reset_postdata();
+      else:
+    ?>
+      <div class="no-content">ยังไม่มีบทความ</div>
+    <?php
       endif;
     ?>
   </div>

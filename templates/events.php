@@ -58,8 +58,7 @@
         wp_reset_postdata();
       else:
     ?>
-      <!-- TODO: STYLE -->
-      ยังไม่มีกิจกรรม 
+      <div class="no-content">ยังไม่มีกิจกรรม</div>
     <?php
       endif;
     ?>

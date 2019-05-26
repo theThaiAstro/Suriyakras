@@ -54,7 +54,7 @@
         wp_reset_postdata();
       else:
     ?>
-      ยังไม่มีข้อมูล
+      <div class="no-content">ยังไม่มีภาพ</div>
     <?php
       endif;
     ?>
