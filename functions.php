@@ -112,6 +112,9 @@
     elseif( is_archive() ):
       wp_register_style('suriyakras_archive', get_template_directory_uri() . '/css/archive.css', array(), '1.0', 'all');
       wp_enqueue_style('suriyakras_archive');
+    elseif( is_404() ):
+      wp_register_style('suriyakras_404', get_template_directory_uri() . '/css/404.css', array(), '1.0', 'all');
+      wp_enqueue_style('suriyakras_404');
     endif;
   }
 

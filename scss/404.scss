@@ -1,0 +1,63 @@
+@import 'colours';
+@import 'master';
+@import 'include-media';
+
+#four-o-four-content {
+  @include media('>=tablet') {
+    padding-left: 16vw;
+  }
+
+  background: $space-white;
+  // Credit: https://commons.wikimedia.org/wiki/File:Cloudy_.jpg
+  background-image: url('../assets/img/404.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: darken($space-grey, 42);
+  display: flex;
+  flex-direction: column;
+  font: {
+    family: $font-heading;
+    size: 2rem;
+    weight: 600;
+  }
+  height: 84vh;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  color: $tas-colour-primary;
+  font-weight: 700;
+  text-decoration: none;
+
+  #get-help & {
+    font-weight: 500;
+  }
+}
+
+p {
+  font-weight: 400;
+  margin-top: 4rem;
+
+  &#get-help {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0;
+  }
+}
+

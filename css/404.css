@@ -1,0 +1,65 @@
+#four-o-four-content {
+  background: #eee;
+  background-image: url("../assets/img/404.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #3f3f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 84vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
+}
+
+@media (min-width: 42em) {
+  #four-o-four-content {
+    padding-left: 16vw;
+  }
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+a {
+  color: #231683;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#get-help a {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  margin-top: 4rem;
+}
+
+p#get-help {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 0;
+}
+/*# sourceMappingURL=404.css.map */
