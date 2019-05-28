@@ -27,6 +27,8 @@
     <?php
       endwhile;
       wp_reset_postdata();
-    endif;
+    else:?>
+      <div id="no-featured-padder"></div>
+    <?php endif;
   endif;
 ?>

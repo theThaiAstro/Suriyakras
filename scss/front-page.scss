@@ -8,6 +8,12 @@ main {
   background: $fa;
 }
 
+#no-featured-padder {
+  @include media('<tablet') {
+    margin-top: 2rem;
+  }
+}
+
 #featured-story {
   background: {
     attachment: fixed;

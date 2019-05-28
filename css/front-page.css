@@ -43,6 +43,12 @@ main {
   background: #fafafa;
 }
 
+@media (max-width: 41.99em) {
+  #no-featured-padder {
+    margin-top: 2rem;
+  }
+}
+
 #featured-story {
   background-attachment: fixed;
   background-color: #050311;
