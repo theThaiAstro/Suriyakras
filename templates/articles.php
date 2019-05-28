@@ -10,7 +10,7 @@
 
       $the_query = new WP_Query([
         'post_type'           => 'post',
-        'category__in'        => array($CATEGORY_IDS['articles']), // NEWS too?
+        'category__in'        => array($CATEGORY_IDS['articles'], $CATEGORY_IDS['news']), // NEWS too?
         'post__not_in'        => get_option( 'sticky_posts' ), // ignores sticky post
         'posts_per_page'      => 4,
         'ignore_sticky_posts' => 1
