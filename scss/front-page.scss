@@ -186,6 +186,12 @@ main {
 }
 
 .section-title {
+  @include media('<tablet') {
+    #phenomena & {
+      color: $tas-colour-black;
+    }
+  }
+
   color: $tas-colour-black;
   font: {
     family: $font-heading;

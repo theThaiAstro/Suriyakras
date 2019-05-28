@@ -216,6 +216,12 @@ main {
   margin: 1rem 0;
 }
 
+@media (max-width: 41.99em) {
+  #phenomena .section-title {
+    color: #050311;
+  }
+}
+
 .section-title.white {
   color: #efeefc;
 }
