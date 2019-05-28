@@ -1,5 +1,6 @@
 @import 'master';
 @import 'colours';
+@import 'commons';
 @import 'include-media';
 
 main {
@@ -190,6 +191,7 @@ a {
           family: $font-text;
           size: 1rem;
         }
+        line-height: 1.6rem;
         margin-top: 0.64rem;
       }
 
@@ -209,7 +211,7 @@ a {
         family: $font-text;
         size: $font-size-content;
       }
-      line-height: 1.28rem;
+      line-height: 2rem;
       margin: 1.6rem 0.64rem 0 $single-padding;
     }
 

@@ -199,6 +199,7 @@ a:active, a:hover {
   display: block;
   font-family: "arundina", sans-serif;
   font-size: 1rem;
+  line-height: 1.6rem;
   margin-top: 0.64rem;
 }
 
@@ -213,7 +214,7 @@ a:active, a:hover {
 #article-content p {
   font-family: "arundina", sans-serif;
   font-size: 1rem;
-  line-height: 1.28rem;
+  line-height: 2rem;
   margin: 1.6rem 0.64rem 0 1.2rem;
 }
 
