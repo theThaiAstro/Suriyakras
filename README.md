@@ -35,6 +35,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 
 ## Finished
 
+- [x] Went live for testing *(28 May)*
 - [x] Created `404.php` *(26 May)*
 - [x] Updated `archive.php` layout *(26 May)*
 - [x] Made `footer.php` responsive *(25 May)*
