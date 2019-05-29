@@ -94,7 +94,6 @@ main {
 }
 
 #featured-story h2 {
-  color: #efeefc;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
@@ -112,6 +111,11 @@ main {
   #featured-story h2 {
     font-size: 3.2rem;
   }
+}
+
+#featured-story h2 a {
+  color: #efeefc;
+  text-decoration: none;
 }
 
 .category-badge {
