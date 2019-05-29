@@ -116,10 +116,10 @@ a {
         &:not(:last-of-type) {
           margin-right: 0.4rem;
         }
-        
+
         a {
           @extend %badge;
-          border-bottom: none;
+          border-bottom: 0;
           color: $fa;
           font: {
             size: 0.8rem;

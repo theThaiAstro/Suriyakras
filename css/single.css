@@ -141,7 +141,7 @@ a:active, a:hover {
 }
 
 #article-category ul li a {
-  border-bottom: none;
+  border-bottom: 0;
   color: #fafafa;
   font-size: 0.8rem;
   font-weight: 500;
