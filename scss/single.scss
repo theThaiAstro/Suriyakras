@@ -83,8 +83,15 @@ a {
     }
 
     &-image {
+      @include media('>=tablet', '<desktop') {
+        height: 24rem;
+      }
+
+      @include media('>=desktop') {
+        height: 32rem;
+      }
+
       height: 16rem;
-      max-height: 48vh;
       object-fit: cover;
       width: 100%;
     }
