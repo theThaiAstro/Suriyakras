@@ -1,7 +1,9 @@
 <section id="events" class="card-section">
 
   <div class="section-title-container">
-    <h2 class="section-title white">กิจกรรม</h2>
+    <h2 class="section-title white">
+      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['events']); ?>">กิจกรรม</a>      
+    </h2>
   </div>
 
   <div class="card-container">

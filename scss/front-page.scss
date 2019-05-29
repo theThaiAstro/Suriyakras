@@ -222,6 +222,11 @@ main {
     margin-right: 0.4rem;
     width: 1rem;
   }
+
+  &-link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .card-link {

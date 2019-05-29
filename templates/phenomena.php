@@ -1,7 +1,9 @@
 <section id="phenomena" class="card-section">
 
   <div class="section-title-container">
-    <h2 class="section-title white">ปรากฏการณ์ท้องฟ้า</h2>
+    <h2 class="section-title white">
+      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['phenomena']); ?>">ปรากฏการณ์ท้องฟ้า</a>      
+    </h2>
   </div>
 
   <div class="card-container">
