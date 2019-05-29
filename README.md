@@ -22,6 +22,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 ### P3
 
 - [ ] Use `@extend` in `front-page.scss`
+- [ ] Rewrite `single.scss` (reduce the use of `&-`)
 - [ ] Add an author box at the end of the article to give some ideas about the author
 - [ ] We should have a Gutenberg reusable block to indicate the content that has been changed
 - [ ] We may need to have the iconic galaxy image at the end of the article.
