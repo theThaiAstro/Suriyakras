@@ -16,6 +16,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 - [ ] Add button for each section title that takes to the category page
 - [ ] The events cards on the main page should have the thumbnails as date/month of the event instead of normal thumbnails
 - [ ] Back to top icon and link at footer
+- [ ] Experiment with other fonts, e.g., Chula Narak
 
 ### P3
 
