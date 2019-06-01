@@ -296,10 +296,6 @@ main {
   text-decoration: none;
 }
 
-.section-title-link:hover {
-  color: #0e0934;
-}
-
 .card-link {
   color: #050311;
   display: block;

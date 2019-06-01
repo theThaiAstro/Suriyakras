@@ -270,12 +270,7 @@ main {
   &-link {
     color: inherit;
     text-decoration: none;
-
-    &:hover {
-      color: lighten($tas-colour-black, 8);
-    }
   }
-
 }
 
 .card-link {
