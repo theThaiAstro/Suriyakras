@@ -261,12 +261,21 @@ main {
 
   &.white {
     color: $tas-colour-white;
+
+    &:hover {
+      color: lighten($tas-colour-white, 8);
+    }
   }
 
   &-link {
     color: inherit;
     text-decoration: none;
+
+    &:hover {
+      color: lighten($tas-colour-black, 8);
+    }
   }
+
 }
 
 .card-link {

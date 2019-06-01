@@ -287,9 +287,17 @@ main {
   color: #efeefc;
 }
 
+.section-title.white:hover {
+  color: white;
+}
+
 .section-title-link {
   color: inherit;
   text-decoration: none;
+}
+
+.section-title-link:hover {
+  color: #0e0934;
 }
 
 .card-link {
