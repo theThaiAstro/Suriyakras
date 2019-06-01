@@ -98,6 +98,15 @@ body {
       &:hover {
         background: darken($tas-colour-primary, 8);
       }
+
+      &::after {
+        color: $tas-colour-red;
+        content: '/';
+        font-family: $font-heading;
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-left: 0.42rem;
+      }
     }
   }
 }

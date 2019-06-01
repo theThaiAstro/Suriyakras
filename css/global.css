@@ -116,6 +116,15 @@ body {
   background: #1a1060;
 }
 
+#site-header-menu-content li a::after {
+  color: #eb0a19;
+  content: '/';
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 0.42rem;
+}
+
 #site-footer {
   background-color: #090623;
   font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
