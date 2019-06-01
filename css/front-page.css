@@ -120,6 +120,10 @@ main {
   text-decoration: none;
 }
 
+#featured-story h2 a:hover {
+  color: white;
+}
+
 #featured-story-button {
   background-color: #eb0a19;
   color: #efeefc;

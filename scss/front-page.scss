@@ -74,6 +74,10 @@ main {
     a {
       color: $tas-colour-white;
       text-decoration: none;
+
+      &:hover {
+        color: lighten($tas-colour-white, 8);
+      }
     }
   }
 }
