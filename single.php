@@ -48,10 +48,10 @@
 
           <aside id="article-share">
             <?php
-              $to_echo = get_the_title() . "%20โดยสมาคมดาราศาสตร์ไทย" . "%0A%0A" . urlencode(get_the_permalink());
+              $to_echo = get_the_permalink();
             ?>
 
-            <a href="https://facebook.com/sharer/sharer.php?u=<?php echo $to_echo; ?>" class="article-share-button facebook" target="_blank">
+            <a href="https://facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="article-share-button facebook" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
 
