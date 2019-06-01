@@ -36,12 +36,84 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  float: left;
   height: 4.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem;
   width: 4.2rem;
   z-index: 1000;
+}
+
+#site-header-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #eb0a19;
+  color: #efeefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.6rem 0.2rem;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#site-header-menu:hover {
+  background: #d70917;
+  cursor: pointer;
+}
+
+#site-header-menu:active {
+  background: #c40815;
+}
+
+#site-header-menu-content {
+  background: #231683;
+  display: none;
+  margin-top: 3.2rem;
+}
+
+#site-header-menu-content ul {
+  margin: 0;
+  padding: 0;
+}
+
+#site-header-menu-content li a {
+  color: #efeefc;
+  display: block;
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  list-style: none;
+  padding: 1.6rem 4.2rem;
+  text-decoration: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+@media (max-width: 41.99em) {
+  #site-header-menu-content li a {
+    padding: 1.2rem 2rem;
+  }
+}
+
+#site-header-menu-content li a:hover {
+  background: #2c1ca6;
 }
 
 #site-footer {

@@ -6,7 +6,7 @@
     return ((int)$CE + 543);
   }
 
-  function get_CATEGORY_IDS() 
+  function get_CATEGORY_IDS()
   {
     $CATEGORY_IDS = array(
       "featured"    => 4,
@@ -73,13 +73,13 @@
   {
     wp_register_style('suriyakras_main_style', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('suriyakras_main_style');
-    
-    wp_register_style('suriyakras_global', get_template_directory_uri() . '/css/global.css', array(), '1.0', 'all');
-    wp_enqueue_style('suriyakras_global');
-    
+
+    wp_register_style('suriyakras_global_style', get_template_directory_uri() . '/css/global.css', array(), '1.0', 'all');
+    wp_enqueue_style('suriyakras_global_style');
+
     wp_register_style('suriyakras_typefaces', get_template_directory_uri() . '/css/typefaces.css', array(), '1.0', 'all');
     wp_enqueue_style('suriyakras_typefaces');
-    
+
     if ( is_front_page() ) :
       wp_register_style('suriyakras_front_page', get_template_directory_uri() . '/css/front-page.css', array(), '1.0', 'all');
       wp_enqueue_style('suriyakras_front_page');
@@ -100,3 +100,11 @@
   // add_action('init', 'suriyakras_header_scripts'); // Add Custom Scripts to wp_head
   // add_action('wp_print_scripts', 'suriyakras_conditional_scripts'); // Add Conditional Page Scripts
   add_action('wp_enqueue_scripts', 'suriyakras_styles'); // Add Theme Stylesheet
+  
+  function suriyakras_scripts()
+  {
+    wp_register_script('suriyakras_global_script', get_template_directory_uri() . '/js/global.js', array(), '1.0', 'all');
+    wp_enqueue_script('suriyakras_global_script');
+  }
+
+  add_action('wp_enqueue_scripts', 'suriyakras_scripts'); // Add Theme Stylesheet

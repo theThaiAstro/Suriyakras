@@ -16,5 +16,9 @@
         <img id="site-header-nav-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tas-logo.png"
           alt="Logo of The Thai Astronomical Society" />
       </a>
+      <div id="site-header-menu" onclick="showMenuContent()">เมนู</div>
+      <div id="site-header-menu-content">
+        <?php wp_nav_menu( array('theme_location' => 'main_navigation') ); ?>
+      </div>
     </nav>
   </header>
