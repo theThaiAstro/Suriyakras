@@ -8,7 +8,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 
 - [ ] Share buttons (phase II)
   - [ ] In articles
-  - [ ] In footer
+  - [x] In footer *(1 Jun)*
 
 ### P2
 
