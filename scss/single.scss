@@ -3,295 +3,358 @@
 @import 'commons';
 @import 'include-media';
 
+
 main {
+  background: $fa;
   color: $tas-colour-black;
-}
 
-#article-metadata,
-#article-content,
-#article-footer {
-  @include media('<tablet') {
-    padding: {
-      left: 4vw;
-      right: 4vw;
+  a:not(.article-share-button) {
+    background: {
+      image: linear-gradient(120deg, $tas-colour-primary 0%, $tas-colour-primary 100%);
+      position: 0 100%;
+      repeat: no-repeat;
+      size: 100% 0;
     }
-  }
-
-  @include media('>=tablet') {
-    padding: {
-      left: 16vw;
-      right: 16vw;
-    }
-  }
-
-  @include media('>=desktop') {
-    padding: {
-      left: 24vw;
-      right: 24vw;
-    }
-  }
-}
-
-a {
-  background: {
-    image: linear-gradient(120deg, $tas-colour-primary 0%, $tas-colour-primary 100%);
-    position: 0 100%;
-    repeat: no-repeat;
-    size: 100% 0;
-  }
-  border-bottom: 2px solid $tas-colour-primary;
-  color: $tas-colour-primary;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background-size 0.128s, color 0.128s;
-
-  &:hover {
-    background-size: 100% 100%;
     border-bottom: 2px solid $tas-colour-primary;
-    color: $space-white;
+    color: $tas-colour-primary;
+    font-weight: 500;
     text-decoration: none;
-  }
+    transition: background-size 0.128s, color 0.128s;
 
-  &:active,
-  &:hover {
-    outline: none;
-  }
-}
+    &:hover {
+      background-size: 100% 100%;
+      border-bottom: 2px solid $tas-colour-primary;
+      color: $space-white;
+      text-decoration: none;
+    }
 
-#article {
-  &-header,
-  &-content {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: $font-heading;
-      margin: 0 $single-padding;
+    &:active,
+    &:hover {
+      outline: none;
     }
   }
 
-  &-header {
-    h1 {
+  //     li {
+  //       line-height: 1.6rem;
+  //     }
+
+
+  //     pre {
+  //       background: $space-white;
+  //       margin: $single-padding;
+  //       overflow-x: scroll;
+  //       padding: 1rem;
+  //     }
+
+
+  blockquote {
+    border-left: 0.4rem solid $tas-colour-primary;
+    margin: 1.6rem 0;
+    padding-left: 1.6rem;
+
+    cite {
+      display: block;
       font: {
-        size: 2.4rem;
-        weight: 700;
+        family: $font-text;
+        size: 0.8rem;
       }
-      line-height: 2.8rem;
-      margin: 0;
-    }
-
-    &-image {
-      @include media('>=tablet', '<desktop') {
-        height: 24rem;
-      }
-
-      @include media('>=desktop') {
-        height: 32rem;
-      }
-
-      height: 16rem;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
-
-  &-metadata {
-    margin: 4rem $single-padding;
-  }
-
-  &-category {
-    margin-bottom: 2rem;
-
-    ul {
-      // margin: 1rem 0 0 0;
-      font-family: $font-heading;
-      padding: 0;
-
-      li {
-        display: inline-block;
-
-        // TODO: Check if this selector is correct (every category except the last one)
-        &:not(:last-of-type) {
-          margin-right: 0.4rem;
-        }
-
-        a {
-          @extend %badge;
-          border-bottom: 0;
-          color: $fa;
-          font: {
-            size: 0.8rem;
-            weight: 500;
-          }
-          padding: 0.32rem 0.64rem;
-          text-decoration: none;
-          transition: all 0.128s ease-in;
-
-          &:hover {
-            background: $space-white;
-            color: $tas-colour-primary;
-          }
-        }
-      }
-    }
-  }
-
-  &-writer {
-    font: {
-      family: $font-heading;
-      size: 1rem;
-      style: normal;
-    }
-    margin-top: 1.28rem;
-
-    a {
-      font-weight: 600;
-    }
-  }
-
-  &-time {
-    display: block;
-    font: {
-      family: $font-heading;
-      size: 1rem;
-      style: normal;
-      weight: 400;
-    }
-    margin-top: 0.64rem;
-  }
-
-  &-modified-time {
-    display: block;
-    font: {
-      family: $font-heading;
-      size: 0.8rem;
-      style: oblique;
-      weight: 400;
-    }
-    opacity: 0.64;
-  }
-
-  &-content {
-    font-family: $font-text;
-    margin-top: 2.4rem;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: 600;
-      margin-bottom: 0.8rem;
-      margin-top: 1.6rem;
-    }
-
-    blockquote {
-      border-left: 0.4rem solid $tas-colour-primary;
-      margin: 1.6rem 0;
-      padding-left: 1.6rem;
-
-      cite {
-        display: block;
-        font: {
-          family: $font-text;
-          size: 0.8rem;
-        }
-        line-height: 1.6rem;
-        margin-top: 0.64rem;
-      }
-
-      p {
-        font: {
-          family: $font-heading;
-          size: 1.2rem;
-          weight: 500;
-        }
-        line-height: 1.6rem;
-        margin: 0; // Another inevitable
-      }
-    }
-
-    li {
       line-height: 1.6rem;
+      margin-top: 0.64rem;
     }
 
     p {
       font: {
-        family: $font-text;
-        size: $font-size-content;
+        family: $font-heading;
+        size: 1.2rem;
+        weight: 500;
       }
-      line-height: 2rem;
-      margin: 1.6rem 0.64rem 0 $single-padding;
-    }
-
-    pre {
-      background: $space-white;
-      margin: $single-padding;
-      overflow-x: scroll;
-      padding: 1rem;
-    }
-
-    table {
-      padding: $single-padding;
+      line-height: 1.6rem;
+      margin: 0; // Another inevitable
     }
   }
 
-  &-footer {
-    margin: {
-      bottom: 6.4rem;
-      top: 2.4rem;
+  figure {
+    img {
+      height: auto;
+      width: 100%;
     }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-heading;
+    font-weight: 600;
+    margin-top: 3.2rem;
+  }
+
+  p {
+    line-height: 2rem;
+    margin-top: 2.4rem;
   }
 }
 
-figure {
-  img {
-    height: auto;
+$grid-config-large:  24vw 8fr 5fr 24vw;
+$grid-config-medium:  6.4rem 8fr 5fr 6.4rem;
+$grid-config:  1.6rem 8fr 5fr 1.6rem;
+
+article {
+  @include media('>=desktop') {
+    grid-template-columns: $grid-config-large;
+  }
+
+  @include media('>=tablet', '<desktop') {
+    grid-template-columns: $grid-config-medium;
+  }
+
+  display: grid;
+  grid-template-areas:  'header header header header'
+                        '. content content .'
+                        '. footer footer .';
+  grid-template-columns: $grid-config;
+}
+
+#article-header {
+  @include media('<tablet') {
+    grid-template-areas:  'thumbnail thumbnail thumbnail thumbnail'
+                        '. categories categories .'
+                        '. title title .'
+                        '. author author .'
+                        '. time time .'
+                        '. share share .';
+  }
+
+  @include media('>=tablet', '<desktop') {
+    grid-template-columns: $grid-config-medium;
+  }
+
+  @include media('>=desktop') {
+    grid-template-columns: $grid-config-large;
+  }
+
+  display: grid;
+  grid-area: header;
+  grid-template-areas:  'thumbnail thumbnail thumbnail thumbnail'
+                        '. categories categories .'
+                        '. title title .'
+                        '. author . .'
+                        '. time share .';
+  grid-template-columns: $grid-config;
+}
+
+#article-thumbnail {
+  grid-area: thumbnail;
+
+  #article-image {
+    @include media('>=tablet', '<desktop') {
+      height: 24rem;
+    }
+
+    @include media('>=desktop') {
+      height: 32rem;
+    }
+
+    height: 24rem;
+    object-fit: cover;
     width: 100%;
   }
 }
 
-#tags {
-  &-wrapper {
-    // margin-top: 2.4rem;
-    font-family: $font-heading;
-    margin: 0 0.64rem 0 1.2rem;
-  }
+#article-categories {
+  grid-area: categories;
+  margin-top: 1.6rem;
 
-  &-list {
+  ul {
+    font-family: $font-heading;
+    margin: 0;
     padding: 0;
 
     li {
       display: inline-block;
+      margin-top: 0.8rem;
 
-      // Assign right margin to every tags except the last one
+      // TODO: Check if this selector is correct (every category except the last one)
       &:not(:last-of-type) {
         margin-right: 0.4rem;
       }
 
       a {
-        background: #23168312;
-        border-bottom: solid $tas-colour-primary 4px;
-        color: $tas-colour-black;
-        font: {
-          size: 1rem;
-          weight: 600;
-        }
-        padding: 0.4rem 0.64rem;
+        @extend %badge;
+        border-bottom: 0;
+        color: $fa;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.32rem 0.64rem;
         text-decoration: none;
-        transition: background 0.128s, color 0.128s;
-
-        &::before {
-          content: '#';
-        }
+        transition: all 0.128s ease-in;
 
         &:hover {
-          background: $tas-colour-primary;
-          color: $tas-colour-white;
+          background: $space-white;
+          color: $tas-colour-primary;
         }
+      }
+    }
+  }
+}
+
+#article-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  grid-area: title;
+  line-height: 2.8rem;
+  margin: 2.4rem 0 0;
+}
+
+#article-author {
+  font-family: $font-heading;
+  font-size: 1rem;
+  font-style: normal;
+  grid-area: author;
+  margin-top: 1.6rem;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+#article-time {
+  grid-area: time;
+  margin-top: 1rem;
+
+  #published-time {
+    display: block;
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    grid-area: time;
+  }
+
+  #modified-time {
+    display: block;
+    font-family: $font-heading;
+    font-size: 0.8rem;
+    font-style: oblique;
+    font-weight: 400;
+    opacity: 0.64;
+  }
+}
+
+#article-share {
+  @include media('<tablet') {
+    margin-top: 1.6rem;
+  }
+
+  @include media('>=tablet') {
+    justify-content: flex-end;
+  }
+
+  display: flex;
+  grid-area: share;
+}
+
+.article-share-button {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.4rem;
+  justify-content: center;
+  text-decoration: none;
+  width: 2.4rem;
+
+  &:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+
+  &.facebook {
+    $facebook-colour: #1877f2;
+    color: $facebook-colour;
+
+    &:hover {
+      background: $facebook-colour;
+    }
+  }
+
+  &.twitter {
+    $twitter-colour: #1DA1F2;
+    color: $twitter-colour;
+
+    &:hover {
+      background: $twitter-colour;
+    }
+  }
+
+  &.email {
+    color: $tas-colour-primary;
+
+    &:hover {
+      background: $tas-colour-primary;
+    }
+  }
+
+  // We have to place this here to override the color in &.social-name
+  &:hover {
+    color: $tas-colour-white;
+  }
+}
+
+#article-content {
+  font-family: $font-text;
+  font-size: $font-size-content;
+  grid-area: content;
+  line-height: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+#article-footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-areas: 'tags';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 6.4rem;
+  margin-top: 0.8rem;
+}
+
+#article-tags {
+  // margin-top: 2.4rem;
+  font-family: $font-heading;
+  grid-area: tags;
+}
+
+#tag-list {
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-top: 0.8rem;
+
+    &:not(:first-of-type) {
+      margin-left: 0.4rem;
+    }
+
+    a {
+      background: #23168312;
+      border-bottom: solid $tas-colour-primary 4px;
+      color: $tas-colour-black;
+      font: {
+        size: 1rem;
+        weight: 600;
+      }
+      padding: 0.4rem 0.64rem;
+      text-decoration: none;
+      transition: background 0.128s, color 0.128s;
+
+      &::before {
+        content: '#';
+      }
+
+      &:hover {
+        background: $tas-colour-primary;
+        color: $tas-colour-white;
       }
     }
   }
