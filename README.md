@@ -6,6 +6,7 @@ Suriyakras is a WordPress theme designed specifically for the Thai Astronomical 
 
 ### 🔥 P1
 
+- [ ] The gallery page should have different layout
 - [ ] Find a way to add the phenomena widget
 
 ### P2
