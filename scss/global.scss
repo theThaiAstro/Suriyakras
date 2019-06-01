@@ -150,14 +150,7 @@ body {
   }
 
   &-socials {
-    margin-top: 1.2rem;
-
-    .icon {
-      fill: $tas-colour-white;
-      height: 1.6rem;
-      margin-right: 1.2rem;
-      width: 1.6rem;
-    }
+    margin: 1.6rem 0;
   }
 
   &-sitemap {
@@ -222,5 +215,15 @@ body {
         text-decoration: underline;
       }
     }
+  }
+}
+
+.site-footer-socials-link {
+  color: $tas-colour-white;
+  font-size: 1.6rem;
+  text-decoration: none;
+
+  &:not(:first-of-type) {
+    margin-left: 1.2rem;
   }
 }

@@ -7,20 +7,20 @@
     </div>
 
     <!-- TODO: Social links -->
-    <!-- <div id="site-footer-socials">
-      <svg id="site-footer-socials-facebook" class="icon">
-        <use xlink:href="./assets/icons/svg-sprites.svg#facebook" />
-      </svg>
-      <svg id="site-footer-socials-twitter" class="icon">
-        <use xlink:href="./assets/icons/svg-sprites.svg#twitter" />
-      </svg>
-      <svg id="site-footer-socials-youtube" class="icon">
-        <use xlink:href="./assets/icons/svg-sprites.svg#youtube" />
-      </svg>
-      <svg id="site-footer-socials-instagram" class="icon">
-        <use xlink:href="./assets/icons/svg-sprites.svg#instagram" />
-      </svg>
-    </div> -->
+    <div id="site-footer-socials">
+      <a href="https://facebook.com/theThaiAstro" title="เฟซบุ๊คของสมาคมดาราศาสตร์ไทย" class="site-footer-socials-link">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/theThaiAstro" title="ทวิตเตอร์ของสมาคมดาราศาสตร์ไทย" class="site-footer-socials-link">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/theThaiAstro" title="อิสตาแกรมของสมาคมดาราศาสตร์ไทย" class="site-footer-socials-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://youtube.com/theThaiAstro" title="อิสตาแกรมของสมาคมดาราศาสตร์ไทย" class="site-footer-socials-link">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
 
     <div id="site-footer-sitemap">
       <!-- Primary footer menu (main links) -->

@@ -167,14 +167,7 @@ body {
 }
 
 #site-footer-socials {
-  margin-top: 1.2rem;
-}
-
-#site-footer-socials .icon {
-  fill: #efeefc;
-  height: 1.6rem;
-  margin-right: 1.2rem;
-  width: 1.6rem;
+  margin: 1.6rem 0;
 }
 
 #site-footer-sitemap {
@@ -237,5 +230,15 @@ body {
 #site-footer-copyright-detail a {
   color: rgba(239, 238, 252, 0.4);
   text-decoration: underline;
+}
+
+.site-footer-socials-link {
+  color: #efeefc;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.site-footer-socials-link:not(:first-of-type) {
+  margin-left: 1.2rem;
 }
 /*# sourceMappingURL=global.css.map */
