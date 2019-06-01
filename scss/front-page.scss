@@ -90,7 +90,7 @@ main {
   }
 
   @include media('>=desktop') {
-    padding: 2rem 8rem;
+    padding: 2rem 16vw;
 
     &:first-of-type {
       padding-top: 4rem;
@@ -114,12 +114,14 @@ main {
   // Credit: Alexander Jamieson
   // https://commons.wikimedia.org/wiki/File:Alexander_Jamieson_Celestial_Atlas-Contents.jpg
   $articles-image-url: '../assets/img/articles-background.jpg';
+  // $articles-image-url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Schlagwortkatalog.jpg/1211px-Schlagwortkatalog.jpg';
+  // $articles-image-url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Books_on_the_shelves_of_the_Goa_University_library%2C_from_another_era.jpg/1024px-Books_on_the_shelves_of_the_Goa_University_library%2C_from_another_era.jpg';
 
   &#articles {
     @include media('>=tablet') {
       .section-title-container {
         background-image: url($articles-image-url);
-        background-position: 52% bottom;
+        background-position: 32% bottom;
       }
     }
   }
@@ -189,7 +191,7 @@ main {
 
   @include media('>=desktop') {
     min-width: 42%;
-    padding: 4.2rem;
+    padding: 3.2rem;
   }
 
   background-origin: center center;
@@ -199,9 +201,25 @@ main {
 
 .section-title {
   @include media('<tablet') {
-    #phenomena & {
+    #phenomena &,
+    #articles & {
       color: $tas-colour-black;
     }
+  }
+
+  @include media('<desktop') {
+    &::before {
+      background: $tas-colour-primary;
+      content: '';
+      display: inline-block;
+      height: 1rem;
+      margin-right: 0.4rem;
+      width: 1rem;
+    }
+  }
+
+  @include media('>=desktop') {
+    font-size: 3.2rem;
   }
 
   color: $tas-colour-black;
@@ -214,15 +232,6 @@ main {
 
   &.white {
     color: $tas-colour-white;
-  }
-
-  &::before {
-    background: $tas-colour-primary;
-    content: '';
-    display: inline-block;
-    height: 1rem;
-    margin-right: 0.4rem;
-    width: 1rem;
   }
 
   &-link {

@@ -141,7 +141,7 @@ main {
 
 @media (min-width: 64em) {
   .card-section {
-    padding: 2rem 8rem;
+    padding: 2rem 16vw;
   }
   .card-section:first-of-type {
     padding-top: 4rem;
@@ -154,7 +154,7 @@ main {
 @media (min-width: 42em) {
   .card-section#articles .section-title-container {
     background-image: url("../assets/img/articles-background.jpg");
-    background-position: 52% bottom;
+    background-position: 32% bottom;
   }
 }
 
@@ -214,7 +214,7 @@ main {
 @media (min-width: 64em) {
   .section-title-container {
     min-width: 42%;
-    padding: 4.2rem;
+    padding: 3.2rem;
   }
 }
 
@@ -227,22 +227,31 @@ main {
 }
 
 @media (max-width: 41.99em) {
-  #phenomena .section-title {
+  #phenomena .section-title,
+  #articles .section-title {
     color: #050311;
+  }
+}
+
+@media (max-width: 63.99em) {
+  .section-title::before {
+    background: #231683;
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    margin-right: 0.4rem;
+    width: 1rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .section-title {
+    font-size: 3.2rem;
   }
 }
 
 .section-title.white {
   color: #efeefc;
-}
-
-.section-title::before {
-  background: #231683;
-  content: '';
-  display: inline-block;
-  height: 1rem;
-  margin-right: 0.4rem;
-  width: 1rem;
 }
 
 .section-title-link {

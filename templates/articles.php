@@ -1,8 +1,8 @@
 <section id="articles" class="card-section">
 
   <div class="section-title-container">
-    <h2 class="section-title">
-      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['articles']); ?>">บทความล่าสุด</a>
+    <h2 class="section-title white">
+      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['articles']); ?>">บทความ</a>
     </h2>
   </div>
 
