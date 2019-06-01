@@ -223,6 +223,10 @@ body {
   font-size: 1.6rem;
   text-decoration: none;
 
+  :hover {
+    color: lighten($tas-colour-white, 16);
+  }
+
   &:not(:first-of-type) {
     margin-left: 1.2rem;
   }

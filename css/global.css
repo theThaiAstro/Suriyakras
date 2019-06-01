@@ -238,6 +238,10 @@ body {
   text-decoration: none;
 }
 
+.site-footer-socials-link :hover {
+  color: white;
+}
+
 .site-footer-socials-link:not(:first-of-type) {
   margin-left: 1.2rem;
 }
