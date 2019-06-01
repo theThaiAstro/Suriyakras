@@ -111,11 +111,10 @@ main {
 
   // CONFIGURATIONS OF EACH SECTION
 
-  // Credit: Alexander Jamieson
-  // https://commons.wikimedia.org/wiki/File:Alexander_Jamieson_Celestial_Atlas-Contents.jpg
+  // Credit: Fredericknoronha
+  // https://commons.wikimedia.org/wiki/File:Books_on_the_shelves_of_the_Goa_University_library,_from_another_era.jpg
   $articles-image-url: '../assets/img/articles-background.jpg';
   // $articles-image-url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Schlagwortkatalog.jpg/1211px-Schlagwortkatalog.jpg';
-  // $articles-image-url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Books_on_the_shelves_of_the_Goa_University_library%2C_from_another_era.jpg/1024px-Books_on_the_shelves_of_the_Goa_University_library%2C_from_another_era.jpg';
 
   &#articles {
     @include media('>=tablet') {
