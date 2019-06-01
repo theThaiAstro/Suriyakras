@@ -128,7 +128,7 @@ main {
   background-color: #eb0a19;
   color: #efeefc;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-top: 2rem;
   padding: 0.64rem 1.6rem;
@@ -139,7 +139,7 @@ main {
 
 @media (max-width: 41.99em) {
   #featured-story-button {
-    font-size: 0.8em;
+    font-size: 1rem;
   }
 }
 
