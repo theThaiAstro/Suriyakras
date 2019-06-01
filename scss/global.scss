@@ -96,7 +96,7 @@ body {
       width: 100%;
 
       &:hover {
-        background: lighten($tas-colour-primary, 8);
+        background: darken($tas-colour-primary, 8);
       }
     }
   }
