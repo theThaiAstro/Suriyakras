@@ -106,5 +106,6 @@
     wp_register_script('suriyakras_global_script', get_template_directory_uri() . '/js/global.js', array(), '1.0', 'all');
     wp_enqueue_script('suriyakras_global_script');
   }
-
-  add_action('wp_enqueue_scripts', 'suriyakras_scripts'); // Add Theme Stylesheet
+  
+  add_action('init', 'suriyakras_scripts'); // Add Custom Scripts to wp_head
+  // add_action('wp_enqueue_scripts', 'suriyakras_scripts'); // Add Theme Stylesheet
