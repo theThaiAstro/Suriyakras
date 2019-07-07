@@ -450,4 +450,46 @@ main {
     padding: 2rem;
   }
 }
+
+#tonight-sky {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  color: #fafafa;
+}
+
+#tonight-sky h2 {
+  margin: 0 0 0.8rem;
+}
+
+#tonight-sky .white-card {
+  background: #fafafa;
+  background: #231683;
+  padding: 2rem;
+  width: 100%;
+}
+
+#tonight-sky .normal {
+  font-weight: normal;
+}
+
+#tonight-sky .tonight-sky-constellation-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+#tonight-sky .tonight-sky-constellation-row > * {
+  margin-top: 0.42rem;
+}
+
+#tonight-sky .tonight-sky-constellation-row > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#tonight-sky .top-row {
+  font-weight: 600;
+  line-: 4rem;
+}
 /*# sourceMappingURL=front-page.css.map */

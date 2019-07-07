@@ -13,6 +13,9 @@
   <!-- Events -->
   <?php get_template_part('templates/events'); ?>
 
+  <!-- Sky -->
+  <?php get_template_part('templates/sky'); ?>
+
   <!-- Phenomena -->
   <?php get_template_part('templates/phenomena'); ?>
   

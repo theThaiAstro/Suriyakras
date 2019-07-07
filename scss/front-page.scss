@@ -386,3 +386,46 @@ main {
   justify-content: center;
   width: 100%;
 }
+
+// * This part was written with hasitation, so it looks shitty
+// TODO: Rewrite
+
+#tonight-sky {
+  font-family: $font-heading;
+  color: #fafafa;
+
+  h2 {
+    // color: $tas-colour-black;
+    margin: 0 0 0.8rem;
+  }
+
+  .white-card {
+    background: #fafafa;
+    background: $tas-colour-primary;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .normal {
+    font-weight: normal;
+  }
+
+  .tonight-sky-constellation-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+
+    & > * {
+      margin-top: 0.42rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .top-row {
+    font-weight: 600;
+    line-: 4rem;
+  }
+}
