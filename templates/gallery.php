@@ -2,7 +2,7 @@
 
   <div class="section-title-container">
     <h2 class="section-title white">
-      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['gallery']); ?>">ห้องภาพท้องฟ้า</a>      
+      <a class="section-title-link" href="<?php echo get_category_link(get_CATEGORY_IDS()['gallery']); ?>">ห้องภาพ<wbr>ท้องฟ้า</a>      
     </h2>
   </div>
 
