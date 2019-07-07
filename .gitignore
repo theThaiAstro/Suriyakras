@@ -21,3 +21,4 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 
 *.map
+node_modules
