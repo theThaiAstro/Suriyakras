@@ -20,7 +20,7 @@
                 <div class="category-badge"><?php echo $category->name; ?></div>
               <?php endforeach; ?>
               <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-              <a id="featured-story-button" href="<?php the_permalink(); ?>">อ่านต่อ</a>
+              <a id="featured-story-button" href="<?php the_permalink(); ?>">อ่านต่อ&nbsp;<i style="font-size: smaller;" class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </section>
@@ -28,8 +28,9 @@
     <?php
       endwhile;
       wp_reset_postdata();
-    else:?>
+    endif;
+    else: ?>
       <div id="no-featured-padder"></div>
-    <?php endif;
+    <?php
   endif;
 ?>
