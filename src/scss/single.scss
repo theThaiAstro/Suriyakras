@@ -16,7 +16,7 @@ a {
   color: $tas-colour-black;
   font-weight: 500;
   text-decoration: none;
-  transition: background-size 0.128s ease-in, color 0.128s ease-in;
+  transition: background-size 0.128s, color 0.128s;
 
   &:hover {
     background-size: 100% 100%;
@@ -123,7 +123,18 @@ a {
       style: normal;
       weight: 400;
     }
-    margin-top: 0.32rem;
+    margin-top: 0.64rem;
+  }
+
+  &-modified-time {
+    display: block;
+    font: {
+      family: $font-heading;
+      size: 0.8rem;
+      style: oblique;
+      weight: 400;
+    }
+    opacity: 0.64;
   }
 
   &-content {
@@ -185,6 +196,13 @@ a {
       padding: $single-padding;
     }
   }
+
+  &-footer {
+    margin: {
+      bottom: 2rem;
+      top: 2.4rem;
+    }
+  }
 }
 
 figure {
@@ -198,11 +216,10 @@ figure {
   &-wrapper {
     // margin-top: 2.4rem;
     font-family: $font-heading;
+    margin: 0 0.64rem 0 1.2rem;
   }
 
   &-list {
-    // TODO: WHY DO WE NEED MARGIN & PADDING?
-    margin: 0;
     padding: 0;
 
     li {
@@ -215,7 +232,7 @@ figure {
 
       a {
         background: #23168312;
-        border-bottom: solud $tas-colour-primary 4px;
+        border-bottom: solid $tas-colour-primary 4px;
         color: $tas-colour-black;
         font: {
           size: 1rem;
@@ -223,6 +240,7 @@ figure {
         }
         padding: 0.4rem 0.64rem;
         text-decoration: none;
+        transition: background 0.128s, color 0.128s;
 
         &::before {
           content: '#';

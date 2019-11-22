@@ -39,11 +39,15 @@ body {
   }
 }
 
-
 #site-footer {
   background-color: $tas-colour-almost-black;
   font-family: $font-heading;
   padding: 4rem 2rem;
+
+  a,
+  a:hover {
+    border: 0;
+  }
 
   &-logo {
     height: 6.4rem;

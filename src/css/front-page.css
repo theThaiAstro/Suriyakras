@@ -100,6 +100,8 @@ main {
   background: #fff;
   border: 1px solid #eee;
   margin-top: 1.2rem;
+  -webkit-transition: all 0.32s;
+  transition: all 0.32s;
 }
 
 .card-container.regular {
@@ -107,6 +109,10 @@ main {
   display: -ms-flexbox;
   display: flex;
   height: 9.6rem;
+}
+
+.card-container:hover {
+  border: 1px solid #aaa;
 }
 
 .card-image-featured {

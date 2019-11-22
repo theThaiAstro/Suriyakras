@@ -91,10 +91,15 @@ main {
     background: $white;
     border: 1px solid $space-white;
     margin-top: 1.2rem;
+    transition: all 0.32s;
 
     &.regular {
       display: flex;
       height: 9.6rem;
+    }
+
+    &:hover {
+      border: 1px solid $space-grey;
     }
   }
 
