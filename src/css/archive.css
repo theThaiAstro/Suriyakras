@@ -1,0 +1,122 @@
+.category-badge {
+  background: #231683;
+  color: #efeefc;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.16rem 0.64rem;
+}
+
+.category-badge a {
+  text-decoration: none;
+}
+
+.bold.category-badge {
+  font-weight: 600;
+}
+
+.red.category-badge {
+  background: #eb0a19;
+}
+
+.small.category-badge {
+  font-size: 0.8rem;
+  padding: 0.08rem 0.64rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  margin: 0;
+}
+
+#main-content {
+  margin-top: 4.2rem;
+  padding: 1.2rem;
+}
+
+#archive-results {
+  margin-top: 2.4rem;
+}
+
+.category-badge {
+  font-size: 0.88rem;
+  margin-bottom: 0.32rem;
+}
+
+.card-container {
+  background: #fff;
+  border: 1px solid #eee;
+  margin-top: 1.2rem;
+  -webkit-transition: -webkit-box-shadow 0.32s;
+  transition: -webkit-box-shadow 0.32s;
+  transition: box-shadow 0.32s;
+  transition: box-shadow 0.32s, -webkit-box-shadow 0.32s;
+}
+
+.card-container.regular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.6rem;
+}
+
+.card-container:hover {
+  -webkit-box-shadow: 0 4px 4px 0 #eee;
+          box-shadow: 0 4px 4px 0 #eee;
+}
+
+.card-image-featured {
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card-image-regular {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 6.4rem;
+}
+
+.card-link {
+  color: #050311;
+  text-decoration: none;
+}
+
+.card-text {
+  font-family: "Noto Sans Thai", "Noto Sans", Helvetica, Arial, sans-serif;
+  padding: 0.8rem 1.2rem;
+  position: relative;
+  width: 100%;
+}
+
+.card-time {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.card-time.regular {
+  bottom: 0;
+  margin-bottom: 0.9rem;
+  margin-top: 0;
+  position: absolute;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+/*# sourceMappingURL=archive.css.map */
